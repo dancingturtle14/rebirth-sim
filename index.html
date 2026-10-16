@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>輪迴局：異世界投胎模擬</title><meta name="description" content="隨機投胎到歷史上某個時代，用估算嘅歷史人口數據過一世。">
+<link rel="preload" href="fonts/Cubic_11.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="style.css"></head><body><main>
+<section id="s-start" class="scr on">
+ <h1>輪迴局</h1><p class="sub">異世界投胎模擬器 · 像素版</p>
+ <div class="panel"><canvas class="scene" id="cv-title"></canvas></div>
+ <div class="panel"><p>孟婆湯已經飲咗。下一世，你會喺邊個時代、邊個地方、咩出身？</p><p style="color:var(--dim);font-size:14px;margin-top:6px">13 個歷史時代，按當時人口粗略加權抽籤。壽命、階級、天災人禍都參考歷史估算。</p>
+ <button class="btn" id="b-go">▶ 投胎</button>
+ <div class="row"><button class="btn alt sm" id="b-past">前世紀錄 <span id="n-past">0</span></button><button class="btn alt sm" onclick="location.href='about.html'">資料來源</button></div></div>
+ <div class="panel"><h2>時代圖鑑</h2><div class="chips" id="chips"></div></div>
+ <div class="panel" id="past" style="display:none"><h2>前世</h2><div id="past-list"></div></div>
+ <p class="note">內容涉及戰爭、疾病、死亡，建議 15 歲以上。數字為歷史估算，唔代表真實個人命運。</p>
+</section>
+<section id="s-birth" class="scr">
+ <div class="panel"><canvas class="scene" id="cv-birth"></canvas></div>
+ <div class="panel reveal" id="reveal"></div>
+ <button class="btn" id="b-live" style="visibility:hidden">開始呢一世 ▶</button>
+</section>
+<section id="s-life" class="scr">
+ <div class="hud"><div class="panel"><div class="age"><span><span class="big" id="h-age">0</span> 歲</span><span id="h-year" style="color:var(--dim)"></span></div>
+ <div id="h-who" style="font-size:13px;color:var(--dim)"></div><canvas class="scene" id="cv-life" style="margin-top:6px"></canvas>
+ <div id="stats" style="margin-top:8px"></div>
+ <div class="row focus" id="focus" style="margin-top:8px"></div></div></div>
+ <div class="panel"><h2>人生事件</h2><div class="feed" id="feed"></div></div>
+</section>
+<section id="s-end" class="scr">
+ <div class="panel"><canvas class="scene" id="cv-end"></canvas><h2 style="margin-top:8px" id="e-title"></h2><div id="e-sum"></div></div>
+ <div class="panel"><h2>一生年譜</h2><div class="grid" id="e-grid"></div><p class="note">■紅=歷史大事 ■藍=抉擇 ■綠=日常 ■白=離世</p></div>
+ <div class="panel"><h2>同一刻出生嘅另外四個靈魂</h2><div class="souls" id="e-souls"></div></div>
+ <div class="panel"><h2>重要時刻</h2><div id="e-log" style="font-size:14px"></div></div>
+ <div class="panel"><h2>分享卡</h2><img class="share" id="e-card" alt="結果卡"><button class="btn" id="b-dl">下載 PNG</button></div>
+ <button class="btn" id="b-again">↻ 再輪迴</button>
+</section>
+</main>
+<div class="ctrl" id="ctrl" style="display:none"><button data-s="0">⏸</button><button data-s="1200">▶</button><button data-s="500" class="on">▶▶</button><button data-s="120">▶▶▶</button></div>
+<div class="modal" id="modal"><div class="panel"><small id="m-age" style="color:var(--dim)"></small><h2 id="m-t"></h2><div id="m-c"></div></div></div>
+<script src="data/eras.js"></script><script src="data/events.js"></script><script src="js/scene.js"></script><script src="js/engine.js"></script><script src="js/ui.js"></script>
+</body></html>
