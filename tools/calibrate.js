@@ -1,5 +1,5 @@
 // 校準：每個時代調整成人死亡率倍數 k，令模擬平均壽命（包括事件死亡）接近參考範圍中位數
-global.window=global;require("../data/eras.js");require("../data/stats.js");require("../data/era-extra.js");require("../data/events.js");require("../js/engine.js");
+global.window=global;require("../data/eras.js");require("../data/stats.js");require("../data/era-extra.js");require("../data/stats2.js");require("../data/events.js");require("../data/events2.js");require("../js/engine.js");
 const N=+process.argv[2]||3000;const out={};window.CALIB={};const rows=[];
 for(const e of ERAS){const tgt=(e.le[0]+e.le[1])/2;let lo=.03,hi=4,k=1,mean;
  const run=k=>{CALIB[e.id]={k,u5:.3,l:[]};let s=0;const ages=[];for(let i=0;i<N;i++){const p=Engine.quick(i*13+7,e.id);s+=p.age;ages.push(p)}return{m:s/N,ages}};

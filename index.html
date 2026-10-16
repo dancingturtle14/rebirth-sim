@@ -8,12 +8,22 @@
  <div class="panel"><p>孟婆湯已經飲咗。下一世，你會喺邊個時代、邊個地方、咩出身？</p>
  <div class="setup"><label>投胎方式<select id="o-era"><option value="">隨機（按當時人口加權）</option></select></label>
  <label>預設速度<select id="o-speed"><option value="1">1x</option><option value="2" selected>2x</option><option value="4">4x</option><option value="8">8x</option><option value="16">16x</option></select></label>
- <label><input type="checkbox" id="o-auto"> 抉擇自動倒數代揀</label></div>
+ <label><input type="checkbox" id="o-auto"> 抉擇自動倒數代揀</label>
+ <details><summary>設定</summary><div class="setup">
+ <label><input type="checkbox" id="o-reflect" checked> 沉澱一下（人生關口嘅小問題）</label>
+ <label><input type="checkbox" id="o-contrast" checked> 古今對照</label>
+ <label><input type="checkbox" id="o-gentle"> 溫和模式（淡化死亡同暴力描述）</label>
+ <label><input type="checkbox" id="o-sound"> 8-bit 音效</label><label><input type="checkbox" id="o-music"> 背景音樂</label></div></details></div>
  <button class="btn" id="b-go">▶ 投胎</button>
  <div class="row"><button class="btn alt sm" id="b-past">前世紀錄 <span id="n-past">0</span></button><button class="btn alt sm" onclick="location.href='about.html'">資料來源</button></div></div>
- <div class="panel"><h2>時代圖鑑</h2><div class="chips" id="chips"></div></div>
+ <div class="panel" id="daily"></div>
+ <div class="panel"><h2>時代圖鑑</h2><div class="chips" id="chips"></div><button class="btn alt" id="b-codex">📖 史料卡・成就・沉澱</button></div>
  <div class="panel" id="past" style="display:none"><h2>前世</h2><div id="past-list"></div></div>
  <p class="note">內容涉及戰爭、疾病、死亡，建議 15 歲以上。所有數字為歷史估算，唔代表真實個人命運。</p>
+</section>
+<section id="s-codex" class="scr">
+ <h1 style="font-size:26px">收藏</h1><div class="tabs" id="cx-tabs"><button data-t="cards" class="on">史料卡</button><button data-t="ach">成就</button><button data-t="refl">沉澱</button><button data-t="line">家族</button></div>
+ <div class="panel" id="cx-body"></div><button class="btn alt" id="b-cx-back">← 返回</button>
 </section>
 <section id="s-birth" class="scr">
  <div class="panel"><h2 id="draw-h">抽籤中……</h2><div id="draw" class="draw"></div></div>
@@ -36,16 +46,23 @@
 </section>
 <section id="s-end" class="scr">
  <div class="panel"><canvas class="scene" id="cv-end"></canvas><h2 style="margin-top:8px" id="e-title"></h2><div id="e-sum"></div></div>
+ <div class="panel lesson"><h2>這一生教會我</h2><div id="e-lesson"></div></div>
+ <div class="panel" id="e-diff" style="display:none"></div>
+ <div class="panel"><h2>古今對照</h2><div id="e-now"></div></div>
+ <div class="panel" id="e-line-p"><h2>傳承</h2><div id="e-line"></div></div>
+ <div class="panel" id="e-ach-p"><h2>成就</h2><div id="e-ach"></div></div>
  <div class="panel"><h2>同一刻出生嘅靈魂（按壽命排）</h2><div id="e-souls"></div></div>
  <div class="panel"><h2>存活曲線</h2><canvas id="cv-surv" class="chart"></canvas><p class="note" id="surv-note"></p></div>
  <div class="panel"><h2>財富變化</h2><canvas id="cv-money" class="chart"></canvas></div>
  <div class="panel"><h2>一生年譜</h2><div class="grid" id="e-grid"></div><p class="note">■紅=歷史大事 ■藍=抉擇 ■白=離世；亮度=快樂；框線=平均壽命</p></div>
  <div class="panel"><h2>重要時刻</h2><div id="e-log"></div></div>
  <div class="panel"><h2>分享卡</h2><img class="share" id="e-card" alt="結果卡"><button class="btn" id="b-dl">下載 PNG</button></div>
+ <button class="btn" id="b-whatif">🔁 如果……（同一出身再活一次）</button>
  <button class="btn" id="b-again">↻ 再輪迴</button><button class="btn alt" onclick="location.href='./'">返主頁</button>
 </section>
 </main>
 <div class="ctrl" id="ctrl" style="display:none"><button data-s="0">⏸</button><button data-s="1">1x</button><button data-s="2">2x</button><button data-s="4">4x</button><button data-s="8">8x</button><button data-s="16">16x</button><button id="c-skip" title="跳到下一個抉擇">⏭</button><button id="c-auto" title="自動代揀">🤖</button></div>
+<div class="modal" id="rmodal"><div class="panel"><small class="dim" id="r-age"></small><h2>🍃 沉澱一下</h2><p id="r-q" style="margin:8px 0"></p><textarea id="r-a" maxlength="120" rows="3" placeholder="（可以唔寫）一句說話就夠"></textarea><div class="row"><button class="btn" id="r-save">寫低</button><button class="btn alt" id="r-skip">略過</button></div><p class="note" id="r-cd">只會儲存喺你部機（localStorage）</p></div></div>
 <div class="modal" id="modal"><div class="panel"><small id="m-age" class="dim"></small><h2 id="m-t"></h2><div class="statbox" id="m-stat"></div><div id="m-c"></div><p class="note" id="m-cd"></p></div></div>
-<script src="data/eras.js"></script><script src="data/stats.js"></script><script src="data/era-extra.js"></script><script src="data/events.js"></script><script src="data/calib.js"></script><script src="js/scene.js"></script><script src="js/engine.js"></script><script src="js/ui.js"></script>
+<script src="data/eras.js"></script><script src="data/stats.js"></script><script src="data/era-extra.js"></script><script src="data/stats2.js"></script><script src="data/events.js"></script><script src="data/events2.js"></script><script src="data/modern.js"></script><script src="data/codex.js"></script><script src="data/calib.js"></script><script src="js/scene.js"></script><script src="js/engine.js"></script><script src="js/sfx.js"></script><script src="js/meaning.js"></script><script src="js/ui.js"></script>
 </body></html>
