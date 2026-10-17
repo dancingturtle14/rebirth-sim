@@ -13,7 +13,7 @@ function erf(x){const t=1/(1+.3275911*Math.abs(x)),y=1-(((((1.061405429*t-1.4531
 const wealthPct=(p)=>{const m=Math.max(p.money,.01*p.era.base);return clamp(50*(1+erf(Math.log(m/(1.5*p.era.base))/1.3/Math.SQRT2)))};
 function incomeBand(era,cls){const cs=[...era.classes].sort((a,b)=>a[2]-b[2]);let lo=0;for(const c of cs){if(c[0]===cls.name)return[Math.round(lo*100),Math.round((lo+c[1])*100)];lo+=c[1]}return[0,100]}
 function born(seed,eraId,heir,alt){
- const R=rng(seed);const era=eraId?ERAS.find(e=>e.id===eraId):wpick(ERAS,W,R);
+ const R=rng(seed);const era=(eraId&&typeof eraId==="object")?eraId:eraId?ERAS.find(e=>e.id===eraId):wpick(ERAS,W,R);
  const y0=era.years[0]+Math.floor(R()*(era.years[1]-era.years[0]));
  let c=wpick(era.classes,c=>c[1],R);
  if(heir){const cp=.75*heir.pct+.25*R(),cs=[...era.classes].sort((a,b)=>a[2]-b[2]);let lo=0;for(const x of cs){lo+=x[1];if(cp<=lo){c=x;break}}}
@@ -33,7 +33,7 @@ function born(seed,eraId,heir,alt){
 const FOCUS={study:{n:"讀書",h:"智慧↑ 快樂↓",fx:{wis:3,hap:-1}},friends:{n:"交朋友",h:"人脈↑ 快樂↑",fx:{soc:3,hap:1}},family:{n:"幫家計",h:"財富↑ 健康↓",fx:{hea:-1},inc:.25},sport:{n:"鍛鍊",h:"健康↑",fx:{hea:3,hap:1}},hobby:{n:"嗜好",h:"快樂↑ 智慧↑少",fx:{hap:3,wis:1}}};
 function apply(p,fx){for(const k in fx||{})p[k]=clamp(p[k]+fx[k])}
 function hazard(p){const m=p.era.mort,a=p.age,k=(window.CALIB?.[p.era.id]?.k)??1;
- let h=a<1?m.q0:a<5?m.c:a<15?m.bg*.6*k:(m.bg*(m.q0>.05?.8:1)+m.g*(m.q0>.05?.45:.8)*Math.exp(.085*(a-30)))*k;
+ let h=m.w?(a<1?m.q0:a<5?m.c:a<15?m.bg*.5*k:m.bg*k+m.g*Math.pow(k,.3)*Math.exp(.09*(a-30))):a<1?m.q0:a<5?m.c:a<15?m.bg*.6*k:(m.bg*(m.q0>.05?.8:1)+m.g*(m.q0>.05?.45:.8)*Math.exp(.085*(a-30)))*k;
  h*=p.cls.mm*(1.3-p.hea/200);if(p.wea<10&&a>=5)h*=1.2;return Math.min(.95,h)}
 function S(p,key){return (window.STATS[p.era.id]||{})[key]}
 function log(p,k,t,src,extra){p.log.push({k,t,src,age:p.age,year:p.year,...extra})}
@@ -65,12 +65,13 @@ function step(p){
  if(p.parentsAlive&&R()<(p.age<15?.02:.05+p.age*.002)){p.parentsAlive--;log(p,"fam",p.parentsAlive?"你一位父母親離世。":"你另一位父母親都離開咗。");apply(p,{hap:-8})}
  if(p.pendingKidDeath&&p.age>=p.pendingKidDeath.at){p.pendingKidDeath=null;p.kidsAlive--;p.kidsDead++;const s=S(p,"tfr");log(p,"death","你一個孩子未滿五歲就夭折了。願安息。",s&&s[0]+" — "+s[1]);apply(p,{hap:-15})}
  e.events.forEach((v,vi)=>{if(p.year>=v.y[0]&&p.year<=v.y[1]){
-  if(p.year===v.y[0]||p.age===0){const ck=e.id+":"+vi;ev.push({k:"hist",t:v.t,src:v.s||e.hsrc,codex:ck});if(!p.codex.includes(ck))p.codex.push(ck);if(v.fx)apply(p,v.fx);mark="h"}
-  const safe=p.safeUntil>=p.year?.35:1;
-  if(v.war||v.famine||(v.plague&&v.plague>.01)){p.danger=1;p.dangerEvt={t:v.t,war:v.war}}
+  if(p.year===v.y[0]||p.age===0){const ck=v.ck||e.id+":"+vi;ev.push({k:"hist",t:v.t,src:v.s||e.hsrc,codex:ck});if(!p.codex.includes(ck))p.codex.push(ck);if(v.fx)apply(p,v.fx);mark="h"}
+  const safe=(p.safeUntil>=p.year?.35:1)*(e.evMul??1);
+  if(v.captive&&!p.flags.enslaved&&p.age>=10&&p.age<=35&&R()<v.captive){p.flags.enslaved=1;if(R()<.13){p.dead="喺橫渡大西洋嘅奴隸船上離世";p.cause="acc";ev.push({k:"death",t:"你被擄走，押上奴隸船。",src:"SlaveVoyages 資料庫：中途航程死亡率約一成幾"})}else{ev.push({k:"hist",t:"你被擄走，押上奴隸船，橫渡大西洋，喺美洲種植園被迫勞動。",src:"SlaveVoyages 資料庫（Eltis & Richardson）"});p.place="大西洋彼岸種植園";p.places.push(p.place);p.cls={name:"被奴役者",rank:-1,mm:1.4};p.incMul=.2;p.money=0;apply(p,{hea:-20,hap:-30,soc:-30})}}
+  if(v.war||v.famine||(v.plague&&v.plague>.01&&!(p.era.mort.w&&v.plague<.02))){p.danger=1;p.dangerEvt={t:v.t,war:v.war}}
   if(v.war&&R()<v.war*p.cls.mm*safe){p.dead="死於戰亂";p.cause="war"}
   if(!p.dead&&v.famine&&R()<v.famine*p.cls.mm*safe*(p.wea>70?.4:1)){p.dead="死於饑荒";p.cause="fam"}
-  if(!p.dead&&v.plague&&R()<v.plague*(1.3-p.hea/200)*(p.safeUntil>=p.year?.6:1)){p.dead="死於瘟疫";p.cause="plg"}
+  if(!p.dead&&v.plague&&R()<v.plague*(e.evMul??1)*(1.3-p.hea/200)*(p.safeUntil>=p.year?.6:1)){p.dead="死於瘟疫";p.cause="plg"}
  }});
  const C=window.CALIB?.[e.id];
  if(C&&MILE.includes(p.age)&&p.age>0){const pct=Math.round(C.l[p.age]*100);ev.push({k:"mile",t:`你活到 ${p.age} 歲。同年同地出生嘅人，估計約 ${pct}% 仲在世。`,src:`模型估算，按 ${e.leSrc} 校準`})}

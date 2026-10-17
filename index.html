@@ -5,8 +5,9 @@
 <section id="s-start" class="scr on">
  <h1>輪迴局</h1><p class="sub">異世界投胎模擬器 · 像素版</p>
  <div class="panel"><canvas class="scene" id="cv-title"></canvas></div>
- <div class="panel"><p>孟婆湯已經飲咗。下一世，你會喺邊個時代、邊個地方、咩出身？</p>
- <div class="setup"><label>投胎方式<select id="o-era"><option value="">隨機（按當時人口加權）</option></select></label>
+ <div class="panel"><p>你唯一可以揀嘅，係<b>年代</b>。<br>喺邊度出世、男定女、生喺富貴定貧苦人家，全部由當年嘅世界人口去決定。</p>
+ <div class="yearpick"><div class="ylab" id="year-lab"></div><input type="range" id="o-year" min="0" max="15" step="1" value="8"><div class="dim small" id="year-note"></div><button class="btn alt sm" id="b-randyear">🎲 隨機年代</button></div>
+ <div class="setup">
  <label>預設速度<select id="o-speed"><option value="1">1x</option><option value="2" selected>2x</option><option value="4">4x</option><option value="8">8x</option><option value="16">16x</option></select></label>
  <label><input type="checkbox" id="o-auto"> 抉擇自動倒數代揀</label>
  <details><summary>設定</summary><div class="setup">
@@ -64,5 +65,5 @@
 <div class="ctrl" id="ctrl" style="display:none"><button data-s="0">⏸</button><button data-s="1">1x</button><button data-s="2">2x</button><button data-s="4">4x</button><button data-s="8">8x</button><button data-s="16">16x</button><button id="c-skip" title="跳到下一個抉擇">⏭</button><button id="c-auto" title="自動代揀">🤖</button></div>
 <div class="modal" id="rmodal"><div class="panel"><small class="dim" id="r-age"></small><h2>🍃 沉澱一下</h2><p id="r-q" style="margin:8px 0"></p><textarea id="r-a" maxlength="120" rows="3" placeholder="（可以唔寫）一句說話就夠"></textarea><div class="row"><button class="btn" id="r-save">寫低</button><button class="btn alt" id="r-skip">略過</button></div><p class="note" id="r-cd">只會儲存喺你部機（localStorage）</p></div></div>
 <div class="modal" id="modal"><div class="panel"><small id="m-age" class="dim"></small><h2 id="m-t"></h2><div class="statbox" id="m-stat"></div><div id="m-c"></div><p class="note" id="m-cd"></p></div></div>
-<script src="data/eras.js"></script><script src="data/stats.js"></script><script src="data/era-extra.js"></script><script src="data/stats2.js"></script><script src="data/events.js"></script><script src="data/events2.js"></script><script src="data/modern.js"></script><script src="data/codex.js"></script><script src="data/calib.js"></script><script src="js/scene.js"></script><script src="js/engine.js"></script><script src="js/sfx.js"></script><script src="js/meaning.js"></script><script src="js/ui.js"></script>
+<script src="data/eras.js"></script><script src="data/stats.js"></script><script src="data/era-extra.js"></script><script src="data/stats2.js"></script><script src="data/events.js"></script><script src="data/events2.js"></script><script src="data/modern.js"></script><script src="data/codex.js"></script><script src="data/calib.js"></script><script src="data/world-data.js"></script><script src="data/regions.js"></script><script src="data/world-events.js"></script><script src="data/calib-world.js"></script><script src="js/scene.js"></script><script src="js/engine.js"></script><script src="js/world.js"></script><script src="js/sfx.js"></script><script src="js/meaning.js"></script><script src="js/ui.js"></script>
 </body></html>

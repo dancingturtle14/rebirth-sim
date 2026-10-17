@@ -76,3 +76,7 @@ textarea{font:inherit;width:100%;background:#120f1c;color:var(--ink);border:0;bo
 .achl div{display:flex;gap:8px;padding:5px;font-size:13px}.achl div.no{opacity:.4}.achl .new{color:#7ad08a}
 .tree div{padding:6px 8px;margin:4px 0 4px calc(var(--g)*14px);background:#221c35;box-shadow:0 0 0 2px var(--bd);font-size:13px}
 .diff table{width:100%;font-size:13px}.diff td{padding:3px}
+
+.yearpick{text-align:center;margin:12px 0}.ylab{font-size:30px;color:var(--ac);text-shadow:3px 3px 0 var(--bd)}
+input[type=range]{width:100%;accent-color:var(--ac);height:28px}
+.draw div.other{opacity:.6}

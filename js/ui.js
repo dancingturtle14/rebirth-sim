@@ -11,16 +11,20 @@ let P=null,mult=+Q.get("speed")||2,timer=null,pending=null,autoDec=QA,cd=null,sk
 const show=id=>{document.querySelectorAll(".scr").forEach(s=>s.classList.toggle("on",s.id===id));$("ctrl").style.display=id==="s-life"?"flex":"none";scrollTo(0,0)};
 const bar=(v,c)=>`<div class="bar"><i style="width:${v}%;--c:${c}"></i></div>`;
 /* 主頁 */
-ERAS.forEach(e=>$("o-era").insertAdjacentHTML("beforeend",`<option value="${e.id}">${e.name}（${pct(E.eraProb(e))}）</option>`));
-function home(){const L=store.get();$("n-past").textContent=L.length;const got=new Set(L.map(l=>l.era));
- $("chips").innerHTML=ERAS.map(e=>`<span class="${got.has(e.id)?"got":""}">${got.has(e.id)?"✓ ":"？"}${e.name}</span>`).join("")+`<p class="note">已解鎖 ${got.size}/${ERAS.length}</p>`;
+World.build("hk",2020);
+const yi=()=>+$("o-year").value,anc=()=>ANCHORS[yi()];
+function yearUI(){const a=anc(),L=World.probs(a),tot=L.reduce((s,x)=>s+x.c.pop,0);$("year-lab").textContent=World.ylab(a)+(a>=1800?"代":"前後");$("year-note").textContent=`當時全球人口約 ${tot>=1000?(tot/1000).toFixed(1)+" 十億":Math.round(tot)+" 百萬"}（HYDE 3.x）· 最可能出世喺：${L.slice(0,3).map(x=>REGIONS[x.r].n+" "+pct(x.p)).join("、")}`}
+$("o-year").oninput=yearUI;$("b-randyear").onclick=()=>{$("o-year").value=Math.floor(Math.random()*ANCHORS.length);yearUI();SFX.click()};
+if(Q.get("year")){const y=+Q.get("year");let bi=0;ANCHORS.forEach((a,i)=>{if(Math.abs(a-y)<Math.abs(ANCHORS[bi]-y))bi=i});$("o-year").value=bi}yearUI();
+function home(){const L=store.get();$("n-past").textContent=L.length;const got=new Set(L.map(l=>l.reg||l.era)),ga=new Set(L.map(l=>l.anchor).filter(x=>x!=null));
+ $("chips").innerHTML=Object.entries(REGIONS).map(([k,r])=>`<span class="${got.has(k)?"got":""}">${got.has(k)?"✓ ":"？"}${r.n}</span>`).join("")+`<p class="note">已投胎過 ${[...got].filter(k=>REGIONS[k]).length}/${Object.keys(REGIONS).length} 個地區 · ${ga.size}/${ANCHORS.length} 個年代</p>`;
  $("past-list").innerHTML=L.slice().reverse().map(l=>`<div class="card"><small>${l.eraName} · ${l.place}</small>${l.name}（${l.cls}）享年 ${l.age} · ${l.cause} · 「${l.title}」</div>`).join("")||"未有紀錄";
  drawScene($("cv-title"),ERAS[Math.floor(Date.now()/4000)%ERAS.length],{person:false});
- const d=M.daily(),c=CODEX[d.card];$("daily").innerHTML=`<h2>今日主題：${d.era.name}</h2><div class="codexnote"><b>📖 ${c[0]}</b>${G(c[1])}<span class="fn">📜 ${c[2]}</span></div><button class="btn alt sm" id="b-daily">投胎去${d.era.name}</button>`;
- $("b-daily").onclick=()=>{NEXT={era:d.era.id};begin()}}
+ const dd=new Date(),dk=dd.getFullYear()*400+dd.getMonth()*31+dd.getDate(),da=ANCHORS[dk%ANCHORS.length],ks=Object.keys(CODEX),c=CODEX[ks[dk%ks.length]];$("daily").innerHTML=`<h2>今日主題：${World.ylab(da)}</h2><div class="codexnote"><b>📖 ${c[0]}</b>${G(c[1])}<span class="fn">📜 ${c[2]}</span></div><button class="btn alt sm" id="b-daily">投胎去 ${World.ylab(da)}</button>`;
+ $("b-daily").onclick=()=>{NEXT={anchor:da};begin()}}
 setInterval(()=>{if($("s-start").classList.contains("on"))drawScene($("cv-title"),ERAS[Math.floor(Date.now()/4000)%ERAS.length],{person:false})},4000);
 function codex(tab){show("s-codex");document.querySelectorAll("#cx-tabs button").forEach(b=>{b.classList.toggle("on",b.dataset.t===tab);b.onclick=()=>codex(b.dataset.t)});const B=$("cx-body");
- if(tab==="cards"){const got=new Set(LS.get("rebirth_codex",[]));const keys=Object.keys(CODEX);B.innerHTML=`<p class="dim small">已收集 ${got.size}/${keys.length} 張。喺人生入面遇上歷史大事就會解鎖。</p><div class="cx">${keys.map(k=>{const e=ERAS.find(x=>x.id===k.split(":")[0]),c=CODEX[k];return got.has(k)?`<div data-k="${k}"><b>${c[0]}</b>${e.name}</div>`:`<div class="lock">？？？<br>${e.name}</div>`}).join("")}</div><div id="cx-read"></div>`;
+ if(tab==="cards"){const got=new Set(LS.get("rebirth_codex",[]));const keys=Object.keys(CODEX);B.innerHTML=`<p class="dim small">已收集 ${got.size}/${keys.length} 張。喺人生入面遇上歷史大事就會解鎖。</p><div class="cx">${keys.map(k=>{const e=ERAS.find(x=>x.id===k.split(":")[0]),en=e?e.name:"世界史",c=CODEX[k];return got.has(k)?`<div data-k="${k}"><b>${c[0]}</b>${en}</div>`:`<div class="lock">？？？<br>${en}</div>`}).join("")}</div><div id="cx-read"></div>`;
   B.querySelectorAll(".cx div[data-k]").forEach(d=>d.onclick=()=>{const c=CODEX[d.dataset.k];$("cx-read").innerHTML=`<div class="codexnote" style="margin-top:10px"><b>📖 ${c[0]}</b>${G(c[1])}<span class="fn">📜 ${c[2]}</span></div>`;SFX.card()})}
  if(tab==="ach"){const got=new Set(LS.get("rebirth_ach",[]));B.innerHTML=`<p class="dim small">${got.size}/${M.ACH.length}</p><div class="achl">${M.ACH.map(a=>`<div class="${got.has(a[0])?"":"no"}">${got.has(a[0])?"🏆":"🔒"} <span><b>${a[1]}</b><br><span class="dim">${a[2]}</span></span></div>`).join("")}</div>`}
  if(tab==="refl"){const L=LS.get("rebirth_reflect",[]).filter(r=>r.a).reverse();B.innerHTML=L.map(r=>`<blockquote>「${r.a.replace(/</g,"&lt;")}」<small>${r.era} · ${r.name} ${r.age} 歲 —— ${r.q}</small></blockquote>`).join("")||"<p class='dim'>仲未寫低任何沉澱。</p>"}
@@ -31,22 +35,23 @@ $("b-past").onclick=()=>{const p=$("past");p.style.display=p.style.display==="no
 function spin(items,target,done){const box=$("draw");box.innerHTML=items.map(i=>`<div><span>${i[0]}</span><span>${i[1]}</span></div>`).join("");
  const rows=[...box.children],ti=items.findIndex(i=>i[2]===target),total=items.length*2+ti;let k=0;
  const tick=()=>{rows.forEach(r=>r.classList.remove("hi"));rows[k%rows.length].classList.add("hi");if(k>=total)return setTimeout(done,QA?0:600);k++;setTimeout(tick,QA?0:40+Math.pow(k/total,3)*260)};tick()}
-function begin(){SFX.set(SET.sound,SET.music);SFX.click();const seed=NEXT.seed||+Q.get("seed")||Math.floor(Math.random()*1e9);P=E.born(seed,NEXT.era||Q.get("era")||$("o-era").value||null,NEXT.heir||null);P.whatif=NEXT.whatif||null;P.rDone={};P.rq=[];NEXT={};
+function begin(){SFX.set(SET.sound,SET.music);SFX.click();const seed=NEXT.seed||+Q.get("seed")||Math.floor(Math.random()*1e9);const anchor=NEXT.anchor??anc();const era=World.eraFor(seed,anchor,NEXT.reg||Q.get("reg")||null);P=E.born(seed,era,NEXT.heir||null);P.anchor=anchor;P.whatif=NEXT.whatif||null;P.rDone={};P.rq=[];NEXT={};
  mult=+$("o-speed").value||mult;autoDec=QA||$("o-auto").checked;show("s-birth");$("reg").style.display="none";const e=P.era;
- $("draw-h").textContent="抽時代……（機率按當時人口估算加權）";
- spin(ERAS.map(x=>[x.name,pct(E.eraProb(x)),x]),e,()=>{
-  $("draw-h").textContent=`抽地點……（${e.name}）`;const cityP=e.urb/e.place.length,rurP=(1-e.urb)/e.place.length;
-  const items=e.place.flatMap(pl=>[[pl+"（城）",pct(cityP),pl],[pl+"附近鄉村",pct(rurP),pl+"附近鄉村"]]).filter(i=>parseFloat(i[1])>0);
-  spin(items,P.place,reg)})}
+ const L=World.probs(P.anchor);let top=L.slice(0,9);if(!top.some(x=>x.r===e.reg))top=[...top.slice(0,8),L.find(x=>x.r===e.reg)];const oth=1-top.reduce((s,x)=>s+x.p,0);
+ $("draw-h").textContent=`${World.ylab(P.anchor)}：抽出生地（按當年出生數估算）`;
+ spin([...top.map(x=>[REGIONS[x.r].n,pct(x.p),x.r]),["其他地區",pct(oth),"_o"]],e.reg,()=>{
+  $("draw-h").textContent=`${e.rname}：城市定鄉村？（HYDE 城市化估算）`;
+  spin([["城市",pct(e.urb),"u"],["鄉村",pct(1-e.urb),"r"]],P.urban?"u":"r",()=>{
+   $("draw-h").textContent=`${e.rname}：投胎到邊個家庭？`;spin(e.classes.map(c=>[c[0],pct(c[1]),c[0]]),P.cls.name,reg)})})}
 function reg(){const e=P.era,C=CALIB[e.id],S=STATS[e.id];$("draw-h").textContent="投胎完成";$("reg").style.display="block";drawScene($("cv-birth"),e,{px:29});
  const lines=[["名字",`<span class="big">${P.name}</span>`],["出生",`${E.yr(P.year)} · ${P.sex==="m"?"男":"女"}`],["地點",`${P.place}（${P.urban?"城市":"鄉村"}）`],["時代",e.name],["出身",`${P.cls.name}；收入大約喺當時第 ${P.band[0]}–${P.band[1]} 百分位（按階級比例估算）`],
   ["父親",`${P.father.age} 歲 · ${P.father.job}`],["母親",`${P.mother.age} 歲 · ${P.cls.rank>=3?"持家":"持家兼幫手"}`],["識字機會",P.lit?"有":"冇"],["家產",E.fmtMoney(e,P.money)],
-  ["預期壽命",`約 ${e.le[0]}–${e.le[1]} 歲（估算）`],["五歲前夭折機會",`約 ${pct(C.u5)}（模型估算）`]];
+  ];const c=e.cell;if(c)lines.push(["出生時預期壽命",`${c.le} 歲<span class="fn">📜 ${World.src("le",c.leS)}</span>`],["五歲前夭折機會",`${pct(c.u5)}<span class="fn">📜 ${World.src("u5",c.u5S)}</span>`],["識字率",`${pct(c.lit)}<span class="fn">📜 ${World.src("lit",c.litS)}</span>`],["人均GDP",`${c.gdp.toLocaleString()} 國際元（2011）<span class="fn">📜 ${World.src("gdp",c.gdpS)}</span>`],["生育率",`${c.tfr} 胎<span class="fn">📜 ${World.src("tfr",c.tfrS)}</span>`],["城市人口",`${pct(c.urb)}<span class="fn">📜 ${World.src("urb",c.urbS)}</span>`],["家庭出身比例",`${P.cls.name} 約 ${pct(e.classes.find(x=>x[0]===P.cls.name)?.[1]||0)}<span class="fn">📜 ${e.clsSrc[0]} — ${e.clsSrc[1]}</span>`]);
  $("reg-card").innerHTML=`<h2>出生登記</h2><div class="kv">${lines.map(l=>`<b>${l[0]}</b><span>${l[1]}</span>`).join("")}</div>
- <div class="ctx">喺13個時代之中抽中「${e.name}」嘅機率約 ${pct(E.eraProb(e))}：當時該地區人口估計約 ${e.pop} 百萬（McEvedy & Jones 估算，權重＝人口^0.6）。城市人口比例約 ${pct(e.urb)}（Bairoch 1988 等估算）。<br>壽命來源：${e.leSrc}。${S.unit?`<br>貨幣：${S.unit[0]} — ${S.unit[1]}`:""}</div>`;
+ <div class="ctx">喺${World.ylab(P.anchor)}前後，全球每 100 個新生兒，大約有 ${(World.probs(P.anchor).find(x=>x.r===e.reg).p*100).toFixed(1)} 個喺${e.rname}出世。當地人口約 ${e.pop>=1?Math.round(e.pop):e.pop} 百萬（HYDE 3.x）；出生數用「人口 ÷ 預期壽命」估算（穩定人口近似）。${e.pack?`<br>呢個地方同年代有詳細時代包：「${ERAS.find(x=>x.id===e.pack).name}」。`:""}${S.unit?`<br>貨幣：${S.unit[0]} — ${S.unit[1]}`:""}</div>`;
  if(P.heir){const m=STATS._mobility;$("reg-card").insertAdjacentHTML("afterbegin",`<div class="statbox"><b>🌱 傳承 · 第 ${P.gen} 代</b>你係上一代（財富排名 ${Math.round(P.heir.pct*100)}）嘅後人。出身會部分延續上一代嘅地位。<br>${m[0]}<i>— ${m[1]}</i></div>`)}
  if(QA)setTimeout(live,10)}
-$("b-live").onclick=()=>live();$("b-go").onclick=begin;$("b-again").onclick=()=>{["seed","era"].forEach(k=>Q.delete(k));NEXT={};begin()};
+$("b-live").onclick=()=>live();$("b-go").onclick=begin;$("b-again").onclick=()=>{["seed","era","reg"].forEach(k=>Q.delete(k));NEXT={anchor:P.anchor};begin()};
 /* 生活 */
 function focusUI(){if(P.age<6){$("focus").innerHTML=`<p class="dim small" style="grid-column:1/-1">0–5 歲由家人照顧，6 歲起可以揀。</p>`;return}
  $("focus").innerHTML=Object.entries(E.FOCUS).map(([k,v])=>`<button data-f="${k}" class="${P.focus===k?"on":""}">${v.n}<small>${v.h}</small></button>`).join("");
@@ -61,7 +66,7 @@ function hud(){$("h-age").textContent=P.age;$("h-year").textContent=E.yr(P.year)
 function nowCard(c){if(!c||skipping&&false)return;const d=document.createElement("div");d.className="card now";d.innerHTML=M.cHTML(c);$("feed").prepend(d)}
 function card(e){const d=document.createElement("div");d.className="card "+e.k;let extra="";
  if(e.codex){const c=CODEX[e.codex];const nu=M.unlock([e.codex]);if(c)extra+=`<div class="codexnote"><b>📖 史料卡${nu.length?"（新解鎖）":""}：${c[0]}</b>${G(c[1])}<span class="fn">📜 ${c[2]}</span></div>`;SFX.hist();
-  const [id,vi]=e.codex.split(":"),v=ERAS.find(x=>x.id===id).events[+vi];const key=v.famine?"hunger":v.war?"war":v.plague?"plague":null;
+  const v=P.era.events.find((x,i)=>(x.ck||P.era.id+":"+i)===e.codex)||{};const key=v.famine?"hunger":v.war?"war":v.plague?"plague":null;
   if(key&&SET.contrast&&!P.contrast.some(x=>x.key===key)){const c2=M.contrast(P,key,{t:v.t,src:v.s||P.era.hsrc});P.contrast.push(c2);extra+=M.cHTML(c2)}}
  if(e.k==="death")SFX.death();
  d.innerHTML=`<small>${e.age} 歲 · ${E.yr(e.year)}</small>${G(e.t)}${e.src?`<span class="fn">📜 ${e.src}</span>`:""}${extra}`;$("feed").prepend(d);
@@ -108,27 +113,27 @@ function ending(){show("s-end");const e=P.era,C=CALIB[e.id],t=E.title(P),avg=(e.
   ["子女",P.kids?`${P.kids} 個（${P.kidsDead} 個夭折）`:"冇"],["最快樂嗰年",P.hist.length?`${happy} 歲`:"—"],["遺產",E.fmtMoney(e,P.money)+`（約勝過 ${P.wea}% 人）`]];
  $("e-sum").innerHTML=`<div class="kv">${rows.map(r=>`<b>${r[0]}</b><span>${r[1]}</span>`).join("")}</div>`+ST.map(([k,n,c])=>`<div class="stat"><span>${n.slice(0,2)}</span>${bar(P[k],c)}<span>${P[k]}</span></div>`).join("");
  $("e-grid").innerHTML=gridHTML(P);
- const others=ERAS.filter(x=>x.id!==e.id);const S=[];for(let i=0;i<5;i++){const er=others[Math.floor(E.rng(P.seed+i*97)()*others.length)];S.push(E.quick(P.seed+i+1,er.id))}
+ const S=[];for(let i=0;i<5;i++){const sd=P.seed+i*7919+1;S.push(E.quick(sd,World.eraFor(sd,P.anchor)))}
  const all=[...S,P].sort((a,b)=>b.age-a.age);$("e-souls").innerHTML="";
  all.forEach(s=>{const d=document.createElement("div");d.className="soulrow"+(s===P?" me":"");const c=document.createElement("canvas");drawScene(c,s.era,{px:28,dead:1});d.append(c);
-  d.insertAdjacentHTML("beforeend",`<div><b>${s===P?"你：":""}${s.name}</b><br><span class="dim">${s.era.name} · ${s.cls.name}</span></div><div style="text-align:right">${s.age} 歲<br><span class="dim">${s.dead}</span></div>`);$("e-souls").append(d)});
- chart($("cv-surv"),[{c:"#6ac7e0",d:C.l.slice(0,101)},{c:"#3a5a3a",d:CALIB.hk.l.slice(0,101)}],{maxX:100,mark:P.age,my:Math.round((1-(C.l[P.age]||0))*76)+1});
- $("surv-note").textContent=`藍＝${e.name}同年出生者存活比例；暗綠＝現代香港對照；紅線＝你離世年齡。模型估算，按 ${e.leSrc} 校準。`;
+  d.insertAdjacentHTML("beforeend",`<div><b>${s===P?"你：":""}${s.name}</b><br><span class="dim">${s.era.rname||s.era.name} · ${s.place.replace("附近鄉村","（鄉村）")} · ${s.cls.name}</span></div><div style="text-align:right">${s.age} 歲<br><span class="dim">${s.dead}</span></div>`);$("e-souls").append(d)});
+ chart($("cv-surv"),[{c:"#6ac7e0",d:C.l.slice(0,101)},{c:"#3a5a3a",d:CALIB.w_hk_2020.l.slice(0,101)}],{maxX:100,mark:P.age,my:Math.round((1-(C.l[P.age]||0))*76)+1});
+ $("surv-note").textContent=`藍＝${e.name}同年出生者存活比例；暗綠＝2020年代香港對照；紅線＝你離世年齡。模型估算，按 ${e.leSrc} 校準。`;
  const mx=Math.max(...P.moneyHist,1);chart($("cv-money"),[{c:"#d4af37",d:P.moneyHist}],{maxX:Math.max(10,P.moneyHist.length),maxY:mx});
  const imp=P.log.filter(l=>l.k!=="life");$("e-log").innerHTML=imp.map(l=>`<div class="card ${l.k}" style="margin:6px 0"><small>${l.age} 歲</small>${l.t}${l.src?`<span class="fn">📜 ${l.src}</span>`:""}</div>`).join("")||"平平淡淡。";
- const L=store.get();L.push({era:e.id,eraName:e.name,place:P.place,name:P.name,cls:P.cls.name,age:P.age,cause:P.dead,title:t,ts:Date.now()});store.set(L);
+ const L=store.get();L.push({era:e.id,reg:e.reg,anchor:P.anchor,eraName:e.name,place:P.place,name:P.name,cls:P.cls.name,age:P.age,cause:P.dead,title:t,ts:Date.now()});store.set(L);
 
  const cf=M.counterfactual(P);P.cf=cf;$("e-lesson").innerHTML=M.lesson(P,cf);
  const nowL=[M.contrast(P,"le"),M.contrast(P,"u5"),M.contrast(P,"lit"),...P.contrast.filter(c=>c&&!["le","u5","lit"].includes(c.key))].filter(Boolean);$("e-now").innerHTML=nowL.map(M.cHTML).join("");
- const fam=P.whatif?[{gen:P.gen||1,name:P.name,era:P.era.name,cls:P.cls.name,age:P.age,wea:P.wea}]:M.saveLineage(P);const nx=M.nextEras(P);
+ const fam=P.whatif?[{gen:P.gen||1,name:P.name,era:P.era.name,cls:P.cls.name,age:P.age,wea:P.wea}]:M.saveLineage(P);const na=World.nextAnchor(P.birthYear),nx=na!=null?[{id:na,name:`一代之後：${World.ylab(na)} · ${e.rname}`}]:[];
  $("e-line").innerHTML=`<div class="tree">${fam.map(g=>`<div style="--g:${g.gen-1}">第${g.gen}代 · ${g.name} · ${g.era} · ${g.cls} · ${g.age} 歲 · 財富 ${g.wea}</div>`).join("")}</div>`+
   (P.kidsAlive>0&&nx.length?`<div class="statbox"><b>📊 跨代流動（估算）</b>${STATS._mobility[0]}<i>— ${STATS._mobility[1]}</i></div><p class="small">你有 ${P.kidsAlive} 個子女在世。以後人身份延續去：</p>${nx.map(x=>`<button class="btn alt sm" data-lin="${x.id}">🌱 ${x.name}</button>`).join("")}`:`<p class="dim small">${P.kidsAlive>0?"之後冇更晚嘅時代可以延續。":"呢一世冇在世子女，家族喺呢度停低。"}</p>`);
- $("e-line").querySelectorAll("[data-lin]").forEach(b=>b.onclick=()=>{NEXT={era:b.dataset.lin,heir:M.heirOf(P)};begin()});
+ $("e-line").querySelectorAll("[data-lin]").forEach(b=>b.onclick=()=>{NEXT={anchor:+b.dataset.lin,reg:e.reg,heir:M.heirOf(P)};begin()});
  if(P.whatif){const w=P.whatif,row=(n,a,b)=>`<tr><td>${n}</td><td>${a}</td><td>${b}</td></tr>`;let div=w.choices.findIndex((c,i)=>!P.choices[i]||P.choices[i].id!==c.id||P.choices[i].i!==c.i);
   $("e-diff").style.display="block";$("e-diff").innerHTML=`<h2>🔁 如果……對照</h2><div class="diff"><table><tr><td></td><td class="dim">上一次</td><td class="dim">今次</td></tr>${row("享年",w.age+" 歲",P.age+" 歲")}${row("結局",G(w.dead),G(P.dead))}${row("財富排名",w.wea,P.wea)}${row("子女",w.kids,P.kids)}${row("稱號",w.title,t)}</table></div>
   <p class="small" style="margin-top:6px">${div<0?"兩次嘅抉擇完全一樣：分別只嚟自運氣。":`兩條路喺 ${w.choices[div]?.age??"?"} 歲嗰個抉擇開始分岔。出身、時代同分岔之前嘅際遇完全一樣：之後嘅分別就係抉擇同運氣嘅結果。`}</p>`}else $("e-diff").style.display="none";
  const nu=M.checkAch(P,{whatif:!!P.whatif});const got=new Set(LS.get("rebirth_ach",[]));$("e-ach").innerHTML=`<div class="achl">${M.ACH.filter(a=>got.has(a[0])).map(a=>`<div>🏆 <span class="${nu.includes(a[0])?"new":""}">${a[1]}${nu.includes(a[0])?"（新）":""}</span></div>`).join("")}</div><p class="note">${got.size}/${M.ACH.length}</p>`;
- $("b-whatif").onclick=()=>{NEXT={seed:P.seed,era:P.era.id,heir:P.heir,whatif:{age:P.age,dead:P.dead,wea:P.wea,kids:P.kids,title:t,choices:P.choices}};begin()};
+ $("b-whatif").onclick=()=>{NEXT={seed:P.seed,anchor:P.anchor,reg:e.reg,heir:P.heir,whatif:{age:P.age,dead:P.dead,wea:P.wea,kids:P.kids,title:t,choices:P.choices}};begin()};
  shareCard(t,all);window.__done=true}
 function shareCard(t,all){const c=document.createElement("canvas"),W=360,H=560,x=c.getContext("2d");c.width=W;c.height=H;x.imageSmoothingEnabled=false;
  x.fillStyle="#1a1626";x.fillRect(0,0,W,H);const sc=document.createElement("canvas");drawScene(sc,P.era,{px:29,night:1});x.drawImage(sc,20,20,320,200);
@@ -137,7 +142,7 @@ function shareCard(t,all){const c=document.createElement("canvas"),W=360,H=560,x
  x.fillStyle="#f3ead2";x.font="20px Cubic";x.fillText(`「${t}」${P.name}`,20,290);x.font="15px Cubic";
  [`${P.era.name} · ${P.place}`,`${E.yr(P.birthYear)} – ${E.yr(P.year)} · ${P.cls.name}`,`享年 ${P.age} 歲 · ${P.dead}`].forEach((s,i)=>x.fillText(s,20,318+i*22));
  ST.forEach(([k,n,col],i)=>{const y=392+Math.floor(i/2)*22,X=20+(i%2)*170;x.fillStyle="#a99fc0";x.font="13px Cubic";x.fillText(n.slice(0,2),X,y);x.fillStyle="#120f1c";x.fillRect(X+34,y-10,100,9);x.fillStyle=col;for(let j=0;j<P[k];j+=8)x.fillRect(X+34+j,y-10,6,9)});
- x.fillStyle="#a99fc0";x.fillText("同一刻出生：",20,462);all.filter(s=>s!==P).slice(0,4).forEach((s,i)=>x.fillText(`${s.era.name} ${s.age}歲`,20+(i%2)*170,480+Math.floor(i/2)*16));
+ x.fillStyle="#a99fc0";x.fillText("同一刻出生：",20,462);all.filter(s=>s!==P).slice(0,4).forEach((s,i)=>x.fillText(`${s.era.rname||s.era.name} ${s.age}歲`,20+(i%2)*170,480+Math.floor(i/2)*16));
  if(P.cf){const f=Math.abs(P.cf.sbWea-P.cf.eraWea),c=Math.abs(P.wea-P.cf.sbWea),fs=Math.round(100*f/Math.max(1,f+c));x.fillStyle="#a3322b";x.fillRect(20,516,fs*3.2,8);x.fillStyle="#2f5f7a";x.fillRect(20+fs*3.2,516,320-fs*3.2,8);x.fillStyle="#f3ead2";x.font="12px Cubic";x.fillText(`出身 ${fs}% ｜ 抉擇＋運氣 ${100-fs}%${P.gen>1?` ｜ 第${P.gen}代`:""}`,20,510)}
  x.font="13px Cubic";x.fillStyle="#ffcc4d";x.fillText(`dancingturtle14.github.io/rebirth-sim/?seed=${P.seed}`,20,546);
  const url=c.toDataURL("image/png");$("e-card").src=url;$("b-dl").onclick=()=>{const a=document.createElement("a");a.href=url;a.download=`rebirth-${P.name}.png`;a.click()}}
