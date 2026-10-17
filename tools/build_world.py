@@ -41,20 +41,99 @@ def val(s,y,gap=60,extend=0):
     (a,va),(b,vb)=s[i-1],s[i]
     if b-a>gap:return None
     return va+(vb-va)*(y-a)/(b-a)
+# ---- v4.1 修正 ----
+# 人口：唔再將某國最早一年嘅數「倒灌」去更早年份（舊版 extend=500 令愛爾蘭 1950 年 291 萬人口被套用落 1600、1850 年）。
+def madpop():
+    d={}
+    for x in csv.DictReader(open('raw/mpd2023.csv')):
+        if x['pop'] not in('','None'):d.setdefault(x['countrycode'],[]).append((int(float(x['year'])),float(x['pop'])*1000))
+    for k in d:d[k].sort()
+    return d
+MADP=madpop()
+IREL=[(int(x[2]),float(x[3])) for x in list(csv.reader(open('raw/population.csv')))[1:] if x[0]=="Ireland (whole island)" and x[3]]
+IREL.sort()
+# 舊有 OWID 國碼起點較遲嘅國家：用母體（較大範圍）序列按比例倒推，或者確認當時無人居住
+BACK={"PSE":"ISR","SSD":"SDN","SRB":"OWID_SRM"}
+ZERO_BEFORE={"NZL":1200,"TTO":900}  # 毛利人約 1250–1300 年先到紐西蘭；HYDE 千里達 900 年前人口 ≈ 0
+def popc(c,y):
+    y=0 if y==1 else y
+    if c=="IRL":
+        # Maddison／Gapminder 嘅「GBR」1820–1920 已包括全愛爾蘭（大不列顛及愛爾蘭聯合王國），避免重複計算
+        if 1815<=y<=1920:return 0
+        if 1800<=y<1815:return val(IREL,y,30,0)
+        if y<1800 or 1920<y<1950:return val(MADP.get("IRL"),y,300,0) or 0
+    s=POP.get(c)
+    if c in ZERO_BEFORE and y<ZERO_BEFORE[c]:return 0
+    if s and y<s[0][0] and c in BACK:
+        p=POP.get(BACK[c]);a=val(p,y,500,0);b=val(p,s[0][0],500,0)
+        return a*s[0][1]/b if a and b else 0
+    return val(s,y,500,0 if c in BACK or c=="IRL" else 500) or 0
 def agg(reg,y,D,gap=60,extend=0):
     tot=0;w=0;v=0
     for c in R[reg]:
-        p=val(POP.get(c),0 if y==1 else y,500,500) or 0;tot+=p
+        p=popc(c,y);tot+=p
         x=val(D.get(c),y,gap,extend)
         if x is not None:w+=p;v+=p*x
     return (v/w if w else None),(w/tot if tot else 0)
+
+# 識字率：先用該國真實觀測（van Zanden/OWID、UNESCO、人口普查／史家估算），長距離內插或者錨定本地觀測嘅推算會標「估計」
+CEN={ # 國家: [(年份, 識字率%, 來源代號)]
+ "RUS":[(1897,21,"c_rus")],"JPN":[(1870,30,"c_jpn")],"CHN":[(1880,22,"c_chn")],"ITA":[(1861,22,"c_ita")],
+ "USA":[(1870,80,"c_usa"),(1880,83,"c_usa"),(1890,86.7,"c_usa")],"FRA":[(1788,37.1,"c_fra"),(1818,44.5,"c_fra")],
+ "GBR":[(1755,49.5,"c_gbr"),(1840,58.5,"c_gbr")]}
+LITALL={}
+for D,t in ((LITH,"vz"),(LITM,"unesco")):
+    for k,s in D.items():
+        for yy,v in s:LITALL.setdefault(k,{})[yy]=(v,t)
+for k,s in CEN.items():
+    for yy,v,t in s:LITALL.setdefault(k,{})[yy]=(v,t)
+LITS={k:sorted((yy,v,t) for yy,(v,t) in d.items()) for k,d in LITALL.items()}
+WL=LITW["World"]
+def litc(c,y):
+    s=LITS.get(c)
+    if not s:return None,None
+    ys=[a for a,_,_ in s]
+    for a,v,t in s:
+        if a==y:return v,t
+    i=bisect.bisect_left(ys,y)
+    if 0<i<len(s):
+        (a,va,ta),(b,vb,tb)=s[i-1],s[i]
+        if b-a<=250:
+            v=va+(vb-va)*(y-a)/(b-a);near=min(y-a,b-y)
+            return v,(ta if (y-a)<=(b-y) else tb) if b-a<=60 or near<=15 else "vzi"
+    if i==0:
+        a,va,ta=s[0]
+        if a-y<=15:return va,ta
+        w0=val(WL,a,100,5);w1=val(WL,y,100,5)
+        if a-y<=150 and w0 and w1:return min(va,va*w1/w0),"bc"
+        return None,None
+    a,va,ta=s[-1]
+    if y-a<=15:return va,ta
+    if y-a<=80:
+        if va>=95:return va,"bc"   # 已近飽和，維持
+        w0=val(WL,a,100,5);w1=val(WL,y,100,10)
+        if w0 and w1 and w0<100:return min(99,max(va,100-(100-va)*(100-w1)/(100-w0))),"bc"  # 按世界文盲率下降比例推前
+        return va,"bc"
+    return None,None
+RANK={"vz":0,"unesco":0,"vzi":1,"bc":2}
+def litreg(reg,y):
+    tot=w=v=0;tw={}
+    for c in R[reg]:
+        p=popc(c,y);tot+=p;x,t=litc(c,y)
+        if x is not None:w+=p;v+=p*x;tw[t]=tw.get(t,0)+p
+    if not tot or w/tot<.5:return None,None
+    tag=max(tw,key=tw.get)
+    return v/w/100,tag
 out={}
 for reg in R:
     out[reg]={}
     for y in A:
         yy=0 if y==1 else y
-        pop=sum((val(POP.get(c),yy,500,500) or 0) for c in R[reg])
-        c={"pop":round(pop/1e6,3)}
+        pop=sum(popc(c,y) for c in R[reg])
+        c={"pop":round(pop/1e6,3),"popS":"hyde"}
+        bcp=sum(popc(k,y) for k in R[reg] if k in BACK and POP.get(k) and (0 if y==1 else y)<POP[k][0][0])
+        if pop and bcp/pop>=.01:c["popS"]="popbc"
+        elif "IRL" in R[reg] and (y<1800 or 1920<y<1950):c["popS"]="hydm"
         le,cv=agg(reg,y,GLE,30,0) if y>=1800 else (None,0)
         if le and cv>=.5:c["le"]=round(le,1);c["leS"]="gm"
         elif agg(reg,y,LE,30,5)[1]>=.5:c["le"]=round(agg(reg,y,LE,30,5)[0],1);c["leS"]="owid"
@@ -68,8 +147,8 @@ for reg in R:
         t,cv=agg(reg,y,GTFR,30,0) if y>=1800 else (None,0)
         if t and cv>=.5:c["tfr"]=round(t,1);c["tfrS"]="gap"
         else:c["tfr"]=6;c["tfrS"]="pre"
-        l,cv=agg(reg,y,LITM if y>=1975 else LITH,40,5)
-        if l and cv>=.5:c["lit"]=round(l/100,3);c["litS"]="unesco" if y>=1975 else "vz"
+        l,tag=litreg(reg,y)
+        if l is not None:c["lit"]=round(l,3);c["litS"]=tag
         elif y>=1820:c["lit"]=round(val(LITW["World"],y,100,5)/100,3);c["litS"]="world"
         else:c["lit"]=.05;c["litS"]="pre"
         u,cv=agg(reg,y,URB,500,0)

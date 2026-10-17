@@ -80,3 +80,8 @@ textarea{font:inherit;width:100%;background:#120f1c;color:var(--ink);border:0;bo
 .yearpick{text-align:center;margin:12px 0}.ylab{font-size:30px;color:var(--ac);text-shadow:3px 3px 0 var(--bd)}
 input[type=range]{width:100%;accent-color:var(--ac);height:28px}
 .draw div.other{opacity:.6}
+
+/* v4.1 假設值／估計標籤 */
+.est{display:inline-block;margin-left:6px;padding:0 4px;font-size:11px;line-height:16px;border:1px solid;vertical-align:middle}
+.est-a{color:#ffb86b;border-color:#ffb86b}
+.est-e{color:#9fd3ff;border-color:#9fd3ff}

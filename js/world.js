@@ -2,7 +2,16 @@
 window.World=(function(){
 const SRC={gm:"Gapminder（CC BY 4.0）",gap:"Gapminder（CC BY 4.0）",owid:"Our World in Data：Riley／UN／HMD",riley:"Riley (2005) 洲際估算（經 OWID）",pre:"前現代估算",volk:"Volk & Atkinson (2013) 前現代兒童死亡率估算（約43%）",vz:"van Zanden 等 (2014)《How Was Life?》（經 OWID）",unesco:"UNESCO UIS（經 OWID）",world:"世界平均（van Zanden，本地冇數據）",hyde:"HYDE 3.x（經 OWID）",mad:"Maddison Project Database 2023（經 OWID）",madw:"Maddison 世界平均（本地冇數據）"};
 const PRE={le:"前現代估算：沿用 Riley 1770 年洲際水平（經 OWID）",gdp:"前現代估算（接近生存水平，參考 Maddison）",lit:"前現代估算（估計低過一成）",tfr:"前現代估算（一般約 5–7 胎）",urb:"前現代估算（Bairoch 1988）"};
-const src=(k,code)=>code==="pre"?PRE[k]:SRC[code];
+Object.assign(SRC,{popbc:"HYDE 3.x（經 OWID）；部分國家喺數據開始前按母體地區人口比例倒推",hydm:"HYDE 3.x／Gapminder（經 OWID）＋ Maddison 2023（愛爾蘭）",vzi:"van Zanden 等／人口普查／史家估算數據之間長距離內插（經 OWID）",bc:"按本地最近一個真實觀測值，用世界識字率（文盲率）變化比例推算（van Zanden 等，經 OWID）",
+c_rus:"1897 年俄羅斯帝國人口普查：全國識字約 21%（《蘇聯大百科全書》「Грамотность」）",c_jpn:"Dore (1976)：約 1870 年男子 40–50%、女子約 15% 識讀寫（取中間約 30%）",
+c_chn:"Rawski (1979)《Education and Popular Literacy in Ch’ing China》：十九世紀中後期男子 30–45%、女子 2–10% 識字（取約 22%）",c_ita:"1861 年意大利王國人口普查：約 78% 文盲",
+c_usa:"美國人口普查（NCES《120 Years of American Education》表 6：1870 年 20% 文盲、1880 年 17%、1890 年 13.3%）",c_fra:"Maggiolo 婚書簽名調查（1786–90：男 47.4%／女 26.8%；1816–20：男 54.4%／女 34.5%）",
+c_gbr:"Schofield (1973)《Dimensions of Illiteracy, 1750–1850》英格蘭婚書簽名（約 1754：男 62%／女 37%；約 1840：男 66%／女 51%）"});
+// 冇同期本地數據嘅數字：pre＝假設值；volk/world/madw/riley/vzi/bc＝估計（借用其他地方／年代或者推算）
+const ASSUME=new Set(["pre"]),ESTIM=new Set(["volk","world","madw","riley","vzi","bc","popbc"]);
+const grade=code=>ASSUME.has(code)?"假設值":ESTIM.has(code)?"估計":"";
+const tag=code=>{const g=grade(code);return g?`<span class="est est-${g==="假設值"?"a":"e"}">${g}</span>`:""};
+const src=(k,code)=>{const g=grade(code),t=code==="pre"?PRE[k]:SRC[code];return g?`【${g}】${t}`:t};
 const pct=x=>(x*100<1?(x*100).toFixed(1):Math.round(x*100))+"%";
 const ylab=y=>y<0?`前${-y}年`:y===1?"公元1年":`${y}年`;
 const W=c=>c.pop/c.le; // 出生數 ≈ 人口 ÷ 預期壽命（穩定人口近似）
@@ -42,4 +51,4 @@ function palette(reg,y){const P={china:["#bcd4c4","#6f7a5a","#b0402a"],india:["#
 function draw(seed,anchor){const R=Engine.rng(seed*31+7),L=probs(anchor);let r=R(),pick=L[L.length-1];for(const x of L){r-=x.p;if(r<=0){pick=x;break}}return{reg:pick.r,list:L}}
 function eraFor(seed,anchor,reg){return build(reg||draw(seed,anchor).reg,anchor)}
 function nextAnchor(y){return ANCHORS.find(a=>a>=y+25)}
-return{probs,draw,build,eraFor,nextAnchor,ylab,pct,src,SRC}})();
+return{probs,draw,build,eraFor,nextAnchor,ylab,pct,src,SRC,tag,grade}})();
