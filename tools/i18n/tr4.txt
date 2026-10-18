@@ -1,0 +1,350 @@
+900|Ru
+901|Wan
+902|Xiang
+903|Xiuying
+904|Yue'e
+905|Guifang
+906|grow wheat
+907|weave cotton
+908|work at a remittance bank
+909|teach at a village school
+910|work the Grand Canal barges
+911|Little Ice Age droughts year after year send refugees onto the roads.
+912|An epidemic sweeps North China.
+913|Li Zicheng takes Beijing, and the Qing armies pour through the passes.
+914|The Great Clearance forces coastal residents inland.
+915|Edo Japan
+916|Edo
+917|Osaka
+918|Kyoto
+919|Nagasaki
+920|Kaga
+921|about 30–40
+922|Peasant (farmer)
+923|Townsperson (craft/trade)
+924|Samurai
+925|Shinto priest / monk
+926|Outcast
+927|Daimyō
+928|Tanaka
+929|Yamada
+930|Satō
+931|Suzuki
+932|Itō
+933|Watanabe
+934|Tarōkichi
+935|Genzō
+936|Hanbei
+937|Yoichi
+938|Seibei
+939|Yashichi
+940|Okiku
+941|Omatsu
+942|Otsuru
+943|Oume
+944|Ohana
+945|Chiyo
+946|make ukiyo-e prints
+947|run a kimono shop
+948|study at a temple school
+949|fish
+950|The Great Fire of Meireki burns most of Edo.
+951|The Kyōhō Famine.
+952|The Tenmei Famine.
+953|The Tenpō Famine.
+954|The Black Ships arrive.
+955|Industrial Revolution London
+956|London's East End
+957|Manchester
+958|Liverpool
+959|Birmingham
+960|about 35–40 (lower in cities)
+961|Servant
+962|Shopkeeper
+963|Clerk
+964|Middle class
+965|Smith
+966|Jones
+967|Brown
+968|Taylor
+969|Wilson
+970|George
+971|Henry
+972|Charles
+973|Edward
+974|Albert
+975|Mary
+976|Eliza
+977|Anne
+978|Alice
+979|Emily
+980|spin cotton
+981|sweep chimneys
+982|haul cargo on the docks
+983|work as a clerk
+984|build railways
+985|Cholera breaks out.
+986|Cholera breaks out again.
+987|Cholera: John Snow traces the Broad Street pump.
+988|The "Great Stink": the Thames is unbearable.
+989|Shanghai / Hong Kong, 1920s–40s
+990|Shanghai
+991|Hong Kong
+992|about 35–45
+993|Coolie / labourer
+994|Hawker
+995|Office worker
+996|Student family
+997|Comprador / merchant
+998|Prominent family
+999|Ho
+1000|Leung
+1001|Lam
+1002|Ka-ming
+1003|Kwok-wah
+1004|Wai-man
+1005|Tsz-kin
+1006|Yiu-cho
+1007|Chi-keung
+1008|Mei-fung
+1009|Lai-chun
+1010|Yuk-lin
+1011|Shuk-yee
+1012|Pui-fan
+1013|Yuet-ying
+1014|pull a rickshaw
+1015|work in a cotton mill
+1016|clerk at a foreign firm
+1017|work in a teahouse
+1018|work at a newspaper
+1019|The Canton–Hong Kong Strike.
+1020|The January 28 Incident.
+1021|The Battle of Shanghai.
+1022|Hong Kong falls: three years and eight months of occupation.
+1023|Europe around WWII
+1024|Warsaw
+1025|Berlin
+1026|Leningrad
+1027|about 55–60 (plunging in wartime)
+1028|Worker
+1029|Jan
+1030|Ivan
+1031|Peter
+1032|Andrei
+1033|Franz
+1034|Anna
+1035|Maria
+1036|Eva
+1037|Natasha
+1038|Irena
+1039|Sophie
+1040|work in a factory
+1041|work on the railway
+1042|teach
+1043|work as a nurse
+1044|work on a farm
+1045|The Great Depression: mass unemployment.
+1046|The Second World War.
+1047|The Siege of Leningrad / famine in the occupied zones.
+1048|Modern Hong Kong
+1049|Sham Shui Po
+1050|Kwun Tong
+1051|Sha Tin
+1052|Central and Western
+1053|Tin Shui Wai
+1054|about 85
+1055|Low-income family
+1056|Working family
+1057|Tycoon
+1058|Chun-kit
+1059|Ka-ho
+1060|Chi-ming
+1061|Ka-lok
+1062|Ho-yin
+1063|Tsz-long
+1064|Wing-sze
+1065|Ka-yan
+1066|Hoi-lam
+1067|Hiu-tung
+1068|Wai-man
+1069|Lok-yiu
+1070|work in an office
+1071|run a business
+1072|work as a social worker
+1073|Hong Kong's handover.
+1074|The Asian Financial Crisis: property prices crash.
+1075|SARS breaks out.
+1076|The Global Financial Crisis.
+1077|COVID-19.
+1078|A village scribe is willing to take a pupil and teach hieroglyphs.
+1079|A grammaticus has opened a class on the street corner.
+1080|The village tutor is taking young pupils.
+1081|The village tutor is taking young pupils, reading primers that came before the Three Character Classic.
+1082|The clan's charity school is taking children this year.
+1083|A nearby temple school is taking pupils.
+1084|There's a ragged school nearby.
+1085|There's a tutor and a new-style primary school at the end of the lane.
+1086|You've reached school age.
+1087|Your Primary One allocation results are out.
+1088|You have a chance to learn to read.
+1089|Send me to school
+1090|Wisdom↑ Wealth↓
+1091|Costs a small fee
+1092|You learn to read and write.
+1093|After a while, your family needs you back home to help.
+1094|Stay home and help
+1095|Wealth↑ Wisdom↓
+1096|You work alongside the adults.
+1097|A master is willing to take an apprentice to teach "
+1098|Become an apprentice
+1099|Wisdom↑ Network↑, no income for a few years
+1100|You survive the apprentice years and become a craftsperson.
+1101|Your master has a foul temper, and you give up halfway.
+1102|Keep farming / doing odd jobs
+1103|Stable
+1104|You keep doing the work you've always done.
+1105|The exams open this year: prefectures send candidates to the capital for the jinshi exam.
+1106|The triennial exam year comes round again.
+1107|The autumn provincial exam opens this year.
+1108|The governor is nominating "filial and incorrupt" candidates this year.
+1109|The domain school is holding its scholarship exam.
+1110|DSE results are coming soon. How do you prepare?
+1111|There's an exam this year.
+1112|Go all in on the exam
+1113|Success: Wealth↑↑ Reputation↑↑; failure: travel money wasted
+1114|Needs travel money (about 0.3 years' income)
+1115|You get into university.
+1116|You pass with honours and begin an official career!
+1117|You fail.
+1118|Skip it this time
+1119|Keep your travel money
+1120|You decide not to sit it for now.
+1121|The legion is recruiting in your town, promising land on discharge.
+1122|The militia office calls the roll, and it's your turn to serve.
+1123|The commander of a thousand gathers able-bodied men for a campaign.
+1124|You receive a conscription notice.
+1125|A recruiting sergeant buys you drinks at the tavern and urges you to enlist.
+1126|Soldiers march into town press-ganging men.
+1127|The authorities are conscripting soldiers.
+1128|Enlist
+1129|High risk; you might win honours
+1130|You fall on the battlefield.
+1131|Killed in battle
+1132|You win honours and return home with rewards.
+1133|You survive your service and come home wounded.
+1134|Pay to be exempted
+1135|Wealth↓
+1136|Costs about 0.5 years' income
+1137|You pay someone to serve in your place.
+1138|Run and hide
+1139|You might be caught
+1140|You get away with it.
+1141|You're caught, dragged back and punished.
+1142|The county clerk calls the roll: this year you're going north to build walls.
+1143|It's your turn for twenty days of regular corvée.
+1144|It's flood season, and the scribe is calling men to haul stone.
+1145|The lord's steward orders you to work the lord's fields.
+1146|The village official says you must supply men and horses for the post road.
+1147|The authorities are levying corvée labour.
+1148|Serve in person
+1149|Health↓
+1150|There's an accident at the site, and you never come home.
+1151|Died in forced labour
+1152|You get through it and come home noticeably thinner.
+1153|Pay in coin / silk instead
+1154|Costs about 0.25 years' income
+1155|You pay to be excused.
+1156|A shipowner is looking for partners to ship wine to Alexandria.
+1157|A Quanzhou sea merchant is raising shares for a voyage overseas.
+1158|A foreign merchant in the West Market is looking for partners.
+1159|An ortoq merchant invites you to join a caravan on the Silk Road.
+1160|A merchant from your home county invites you to buy a share.
+1161|A friend invites you to pool money and open a shop.
+1162|Someone invites you to go in on a general store.
+1163|Someone invites you to go into business together.
+1164|Invest half your wealth
+1165|Wealth↑↑ or ↓↓
+1166|Needs at least 0.5 years' income
+1167|The venture pays off!
+1168|You lose everything you put in.
+1169|Don't risk it
+1170|You stick to your trade.
+1171|Property prices have dipped; you think about buying a flat.
+1172|Your landlord raises the rent.
+1173|The commander of a thousand is redistributing pastures.
+1174|There's farmland for sale nearby.
+1175|Buy it
+1176|Wealth↓, income↑ later
+1177|Costs about 3 years' income
+1178|You become a property owner.
+1179|Rent land / keep renting
+1180|You keep renting.
+1181|After a few years together, your partner asks when you'll marry.
+1182|You meet someone at a dance.
+1183|A matchmaker comes to propose a marriage.
+1184|Say yes
+1185|Joy↑ Network↑
+1186|Married life is harmonious.
+1187|The marriage is lukewarm.
+1188|Politely decline
+1189|You decide to wait a while longer.
+1190|Your child is of marrying age, and the other family raises the bride price and dowry.
+1191|Throw a grand wedding
+1192|Reputation↑ Wealth↓↓
+1193|Costs about 1.5 years' income
+1194|The wedding is the talk of the town.
+1195|Spend what you can afford
+1196|A simple ceremony.
+1197|Borrow for it
+1198|Risk of debt
+1199|You borrow for the wedding and pay it back slowly.
+1200|Your family may grow again.
+1201|Let it happen
+1202|Joy↑ Wealth↓; risk of losing a child
+1203|A new life is born.
+1204|No more children for now
+1205|You decide not to have more children for now.
+1206|A group of believers invites you to their meetings.
+1207|The abbot asks whether you'd like to take vows.
+1208|The convent is willing to take you in.
+1209|The priest asks you to help at the church.
+1210|A friend invites you to church / to volunteer at a temple.
+1211|The monastery / temple is willing to take you in.
+1212|Joy↑, wealth reset to zero, no marriage
+1213|You take up a life of religious devotion.
+1214|Worship now and then
+1215|Joy↑ (a little)
+1216|You keep your faith but stay in the world.
+1217|People from your village say there's money to be made in the South Seas; a ship is leaving for Luzon.
+1218|Some say life is better in the South Seas, or in Gold Mountain.
+1219|Lots of your friends are emigrating to the UK. Are you thinking of leaving?
+1220|The newspaper runs ads for emigrating to Australia and America.
+1221|The court is recruiting settlers for the frontier, offering land and seed.
+1222|The war isn't over, and many people are moving south.
+1223|War rages in the north, and many cross the river southward.
+1224|You have a chance to leave for a faraway land.
+1225|Go
+1226|Wealth? Network↓
+1227|Needs travel money
+1228|You fall ill on the journey and die.
+1229|Died while migrating
+1230|You find your footing in the new place.
+1231|Life in a foreign land is hard.
+1232|Stay
+1233|Network↑
+1234|You stay in the place you know.
+1235|A friend passes you an opium pipe.
+1236|A coworker takes you to an opium den "for a puff".
+1237|After work your mates drag you to the gin shop.
+1238|A coworker offers you a cigarette.
+1239|A friend invites you to play dice.
+1240|Someone in the pleasure quarters is running a gambling game.
+1241|Your friends invite you out drinking.
+1242|Try it
+1243|Joy↑, but you might get hooked: Health↓ Wealth↓
+1244|You start to get hooked.
+1245|You try it once and leave it.
+1246|Refuse
+1247|Network↓ (a little)
+1248|You politely say no.
+1249|Your habit keeps growing, and your family begs you to quit.

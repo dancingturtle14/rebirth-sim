@@ -1,0 +1,380 @@
+1620|Mandla
+1621|Thabane
+1622|Nosi
+1623|Thandi
+1624|Zuna
+1625|Lindi
+1626|grow maize
+1627|work as a miner
+1628|The British Isles
+1629|Yorkshire
+1630|Lancashire
+1631|the Scottish Lowlands
+1632|Ireland
+1633|Thomas
+1634|James
+1635|Elizabeth
+1636|France
+1637|Provence
+1638|Brittany
+1639|Lyon
+1640|Jean
+1641|Louis
+1642|Jacques
+1643|Marie
+1644|Jeanne
+1645|Catherine
+1646|grow grapes
+1647|weave silk
+1648|The German lands
+1649|Bavaria
+1650|the Rhineland
+1651|Prussia
+1652|Vienna
+1653|the Swiss mountains
+1654|Friedrich
+1655|Karl
+1656|Elisabeth
+1657|brew
+1658|Italy
+1659|Tuscany
+1660|Venice
+1661|Naples
+1662|Sicily
+1663|Giuseppe
+1664|Antonio
+1665|Marco
+1666|Giulia
+1667|Lucia
+1668|Iberia
+1669|Castile
+1670|Andalusia
+1671|Lisbon
+1672|Catalonia
+1673|José
+1674|João
+1675|Pedro
+1676|Isabel
+1677|Carmen
+1678|go to sea
+1679|The Low Countries & Scandinavia
+1680|Holland
+1681|Flanders
+1682|Denmark
+1683|Sweden
+1684|the Norwegian fjords
+1685|Lars
+1686|Erik
+1687|Ingrid
+1688|Karin
+1689|build ships
+1690|Eastern Europe & the Balkans
+1691|the Polish plain
+1692|the Hungarian plain
+1693|Bohemia
+1694|the Balkan mountains
+1695|Greece
+1696|István
+1697|Nikola
+1698|Dimitri
+1699|Katarina
+1700|cut timber
+1701|Russia & the East Slavs
+1702|Moscow
+1703|the Ukrainian steppe
+1704|the Volga
+1705|Siberia
+1706|Belarus
+1707|Mikhail
+1708|Natalia
+1709|Yekaterina
+1710|North America
+1711|the Great Plains
+1712|New England
+1713|the Great Lakes
+1714|the South
+1715|the Pacific coast
+1716|Sarah
+1717|trade
+1718|Mexico & Central America
+1719|the Valley of Mexico
+1720|Yucatán
+1721|Oaxaca
+1722|the Guatemalan highlands
+1723|Quetzal
+1724|Itzco
+1725|Guadalupe
+1726|Xochi
+1727|grow maize
+1728|The Caribbean
+1729|Cuba
+1730|Hispaniola
+1731|Jamaica
+1732|Puerto Rico
+1733|José
+1734|Miguel
+1735|grow sugar cane
+1736|grow tobacco
+1737|The Andes & northern South America
+1738|Cusco
+1739|Lima
+1740|Bogotá
+1741|Quito
+1742|the Chilean valleys
+1743|Huayna
+1744|Túpac
+1745|Cusi
+1746|Rosa
+1747|Inés
+1748|grow potatoes
+1749|herd llamas
+1750|Brazil
+1751|Bahia
+1752|Pernambuco
+1753|Minas Gerais
+1754|Rio
+1755|the Amazon
+1756|Tupi
+1757|Francisca
+1758|Iracema
+1759|pan for gold
+1760|The Southern Cone
+1761|Buenos Aires
+1762|the Pampas
+1763|Montevideo
+1764|the Paraguay River
+1765|Carlos
+1766|herd cattle
+1767|drive cattle
+1768|Oceania
+1769|Australia's east coast
+1770|New Zealand
+1771|the New Guinea highlands
+1772|the Pacific islands
+1773|Jack
+1774|Tane
+1775|Kai
+1776|Amy
+1777|Aloha
+1778|Lily
+1779|Ade
+1780|Ngozi
+1781|Literacy in ancient Egypt is estimated at only about 1%, mainly scribes and priests
+1782|Baines & Eyre (1983) estimate
+1783|Most craftsmen followed their fathers; the Deir el-Medina workmen's village worked on royal tombs for generations
+1784|Černý, A Community of Workmen at Thebes
+1785|The New Kingdom had a standing army and conscripted from across the land for big campaigns
+1786|Spalinger, War in Ancient Egypt (2005)
+1787|In the Nile flood season, farmers owed corvée labour on state projects
+1788|Kemp, Ancient Egypt: Anatomy of a Civilization
+1789|Foreign trade was mostly controlled by the crown and temples, leaving little room for private business
+1790|Most farmland belonged to the crown or temples; most farmers worked it as tenants and handed over the harvest
+1791|Kemp (2006); Katary's research
+1792|Women usually married at about 12–14 and men at about 15–20 (estimate)
+1793|Toivari-Viitala (2001) and other studies
+1794|Marriage was a private agreement; a wife's dowry and property were protected by written contracts
+1795|Johnson (1996); Toivari-Viitala (2001)
+1796|Women had about 6 births on average; about 30–50% of children didn't live to 5 (estimate)
+1797|Scheidel, Death on the Nile (2001)
+1798|Temples owned vast land and labour; priesthoods were mostly hereditary
+1799|Beer was a daily staple, and drunkenness at festivals was common
+1800|Nunn (1996); general archaeological accounts
+1801|Medical texts like the Ebers Papyrus existed, but most treatments had limited effect
+1802|Nunn, Ancient Egyptian Medicine (1996)
+1803|Children, daughters included, could usually inherit
+1804|Deben (a copper weight unit); a workman's monthly ration was a few sacks of grain (estimate)
+1805|Černý; Janssen, Commodity Prices from the Ramessid Period
+1806|Literate people in Qin–Han China were a small minority (a few percent), mostly officials
+1807|Estimates from bamboo-slip research by Hsing I-tien and others
+1808|State workshop craftsmen were hereditary, and Qin law assessed them strictly
+1809|Shuihudi Qin slips, Statutes on Artisans
+1810|Han officials were recruited by recommendation ("filial and incorrupt"), about one per 200,000 people
+1811|Edict of Emperor He in the Book of Later Han (estimated ratio)
+1812|Adult men in Qin–Han owed military service, usually about two years
+1813|Book of Han, Treatise on Food and Money; Han Jiuyi
+1814|About a month of rotating corvée each year; the Great Wall and imperial roads mobilised hundreds of thousands
+1815|Book of Han, Treatise on Food and Money; Records of the Grand Historian
+1816|Emperor Wu of Han nationalised salt and iron and taxed merchants heavily
+1817|Records of the Grand Historian, Treatise on Balanced Standards
+1818|Land concentration was severe: "the rich own fields stretching for miles; the poor have nowhere to plant an awl"
+1819|Book of Han, Treatise on Food and Money, quoting Dong Zhongshu
+1820|Han women still unmarried between 15 and 30 paid extra poll tax; early marriage was the norm
+1821|Book of Han, Annals of Emperor Hui
+1822|Marriage demanded bride price and dowry, and lavish weddings made it hard for poor families to marry
+1823|Discourses on Salt and Iron, and others
+1824|Han households averaged about 5 people; infant and child mortality was high (estimate)
+1825|Household counts in the Book of Han geography treatise; Ge Jianxiong, History of China's Population
+1826|Han people followed magicians and Huang-Lao Daoism; Buddhism arrived only in the late Eastern Han
+1827|General historical accounts
+1828|Frontier settlement: the court moved people to farm the northwest commanderies
+1829|Book of Han, biography of Chao Cuo
+1830|The Yellow Emperor's Inner Classic existed; Zhang Zhongjing's Treatise on Cold Damage was written at the end of the Eastern Han
+1831|General history of medicine
+1832|Qin law required brothers to split households once grown
+1833|Records of the Grand Historian, biography of Lord Shang
+1834|Coins (banliang / wuzhu); Juyan slips show hired labourers earning a few hundred to 1,000 coins a month (estimate)
+1835|Studies of the Juyan slips; Economic History of China: Qin–Han
+1836|Literacy in the Roman Empire is estimated at about 10% or less, higher among urban men
+1837|Harris, Ancient Literacy (1989)
+1838|Apprenticeship contracts were common; Egyptian papyri record weaving apprenticeships of several years
+1839|Bradley (1991); Egyptian apprenticeship papyri
+1840|Legionaries served about 20–25 years and received land or cash on discharge
+1841|Goldsworthy, The Complete Roman Army
+1842|Mediterranean trade flourished, but most people (about 80%) still lived by farming
+1843|Scheidel & Friesen (2009) estimate
+1844|Land was concentrated among senators and big landowners; many farmers were tenants (coloni)
+1845|Women first married in their late teens, men in their late twenties (estimate)
+1846|Saller (1987); Shaw (1987)
+1847|A dowry (dos) was standard, and had to be returned on divorce
+1848|Treggiari, Roman Marriage (1991)
+1849|Women needed about 5–6 births on average just to keep the population stable (estimate)
+1850|Frier (2000); Scheidel (2001)
+1851|Polytheism dominated; Christians were still a small minority before the 3rd century (under 10%, estimated)
+1852|Stark (1996) estimate
+1853|People moved a lot between provinces; Rome had many immigrants and descendants of slaves
+1854|Wine was everywhere, and ordinary people had gladiators, chariot races and gambling
+1855|Doctors (like Galen) were mostly Greek; ordinary people relied on home remedies
+1856|Nutton, Ancient Medicine
+1857|Under patria potestas, the father controlled the family property until he died
+1858|Denarius; a labourer earned about 1 denarius a day (estimate)
+1859|Matthew 20; Scheidel & Friesen (2009)
+1860|There are no Tang literacy statistics; literate people were likely a minority, mostly aristocrats and city dwellers
+1861|General scholarly estimate
+1862|State workshop artisans served in rotation; private trade guilds (hang) gradually took shape
+1863|Tang Liudian; General Economic History of Chinese Handicrafts
+1864|The jinshi exam passed about 20–30 a year out of thousands of candidates (about 2–3%)
+1865|Estimated from the Tongdian and Tang Zhiyan
+1866|Early on, the fubing militia drafted men from 21; later the army switched to paid recruits
+1867|New Book of Tang, Treatise on the Military
+1868|Zu-yong-diao tax system: each adult man owed 20 days' labour a year, payable in silk
+1869|Tang Liudian; New Book of Tang, Treatise on Food and Money
+1870|Chang'an's East and West Markets teemed with merchants, but merchants had low status
+1871|Chang'an Zhi; general historical accounts
+1872|Under the equal-field system each adult man got 100 mu (on paper); later, land concentration was severe
+1873|Tongdian, Food and Money
+1874|Tang law allowed men to marry at 15 and women at 13 (Kaiyuan statutes)
+1875|Tang Huiyao, edict of Kaiyuan 22
+1876|Marriages between grand clans prized betrothal gifts, which the court tried to limit
+1877|Tang Huiyao
+1878|Households in the Tianbao era averaged about 6 people (estimate)
+1879|Household counts in the Tongdian, Food and Money
+1880|Buddhist monasteries were everywhere; about 260,000 monks and nuns were laicised in the Huichang era
+1881|After the An Lushan Rebellion, many northerners moved south
+1882|Ge Jianxiong, History of Chinese Migration
+1883|Drinking was popular and Chang'an was full of wine shops; gambling (chupu) was common too
+1884|There was an Imperial Medical Office; ordinary people relied on herbs and shamans; Sun Simiao's Prescriptions Worth a Thousand Gold circulated
+1885|Tang Liudian; history of medicine
+1886|Tang law required sons to divide family property equally
+1887|Tang Code with commentary, Households and Marriage
+1888|Wen / strings (1,000 wen); hired labour paid a few dozen wen a day (estimate)
+1889|Estimate from Economic History of China: Sui–Tang
+1890|Printing spread in the Song, and literacy rose, but readers were still a minority (estimate)
+1891|Lee, Education in Traditional China (2000)
+1892|Guilds (hang, tuan) regulated trades; apprentices usually served a master for several years
+1893|Dongjing Meng Hua Lu; research by Chuan Han-sheng
+1894|Each exam passed a few hundred jinshi out of tens of thousands of candidates (about 1–2%, estimated)
+1895|Chaffee, The Thorny Gates of Learning (1985)
+1896|Song soldiers were paid professionals in the imperial and provincial armies; the Northern Song army topped a million
+1897|History of Song, Treatise on the Military
+1898|Commerce boomed, and overseas trade thrived at Quanzhou and Guangzhou
+1899|Song Huiyao Jigao; Hartwell's research
+1900|Tenant households were about 30–40% of all households (estimate)
+1901|Qi Xia, Economic History of the Song
+1902|The legal marriage age was 16 for men and 14 for women
+1903|Song Xingtong (Song penal code)
+1904|Lavish dowries were the fashion and became a heavy burden on families
+1905|Ebrey, The Inner Quarters (1993)
+1906|Households averaged about 5 people; infanticide appears in the sources
+1907|Song Huiyao Jigao; Ebrey (1993)
+1908|Buddhism and Daoism both thrived; ordination needed a certificate, which the court sometimes sold
+1909|Song Huiyao Jigao, Daoism and Buddhism
+1910|Mass migration south after the Jingkang Incident
+1911|The pleasure quarters were booming, and guanpu gambling was popular
+1912|Dongjing Meng Hua Lu
+1913|Public pharmacies sold medicine at fair prices
+1914|History of Song, Treatise on Officials
+1915|Sons divided property equally; daughters could receive part of it as dowry
+1916|Song Xingtong; Ebrey (1993)
+1917|Wen / strings; urban hired labour earned about 100 wen a day (estimate)
+1918|Cheng Minsheng, Prices in the Song
+1919|Literacy in late medieval Europe is estimated at about 5–10%
+1920|Cipolla, Literacy and Development in the West
+1921|Guild apprenticeships usually lasted about 7 years
+1922|Epstein (1991), Wage Labor and Guilds
+1923|Archers and foot soldiers were raised for the Hundred Years' War
+1924|Curry, The Hundred Years War
+1925|Serfs worked the lord's land several days a week (labour rent)
+1926|Dyer, Standards of Living (1989)
+1927|Flemish and Italian cities thrived on commerce, especially the wool trade
+1928|Dyer (1989); Spufford (2002)
+1929|About half of English peasants were serfs (villeins) (estimate)
+1930|English peasants first married in their early twenties (estimate)
+1931|Smith; Hanawalt, The Ties That Bound
+1932|The bride's family had to provide a dowry; Florence even set up a dowry fund
+1933|Women had about 4–6 births on average; infant mortality was about 20–30% (estimate)
+1934|Hanawalt (1986); Wrigley estimates
+1935|The Black Death is estimated to have killed 30–50% of Europe's population
+1936|The Church owned vast lands, and monasteries took in younger children
+1937|After the Black Death, labour was scarce and peasants moved to the towns
+1938|Ale was the everyday drink, and people drank a lot of it each day (estimate)
+1939|Bennett, Ale, Beer and Brewsters (1996)
+1940|Physicians were expensive; ordinary people turned to barber-surgeons or herbs
+1941|Siraisi, Medieval & Early Renaissance Medicine
+1942|England mostly practised primogeniture
+1943|Pence (d); a farm labourer earned about 1–2d a day (before the Black Death, estimate)
+1944|Dyer (1989); Clark's wage series
+1945|Mongolian script was created around 1204 from the Uyghur alphabet; very few could read
+1946|Studies of The Secret History of the Mongols; Atwood (2004)
+1947|Artisans from conquered lands were registered as artisan households and served for generations
+1948|History of Yuan, Treatise on Officials
+1949|Decimal military units; any man aged 15 to 70 could be called up
+1950|History of Yuan, Treatise on the Military
+1951|Relay posts and Silk Road trade were protected, and ortoq merchants flourished
+1952|Allsen, Commodity and Exchange (1997)
+1953|Pastures were allotted by each thousand-household unit, and herders moved with their tribe
+1954|Atwood, Encyclopedia of Mongolia
+1955|Early marriage was common, and marriages often sealed alliances
+1956|The groom's side paid the bride price in livestock
+1957|Nomad families had many children, but infant mortality was high (estimate)
+1958|General population-history estimate
+1959|Religious tolerance: shamanism, Buddhism, Islam and the Church of the East coexisted
+1960|Jackson, The Mongols and the West
+1961|Masses of artisans and military households were relocated across the empire
+1962|Kumis was everywhere, and heavy drinking was the norm at court
+1963|Smith (2000), "Dietary Decadence"
+1964|Persian and Chinese medicine were brought in, and a Guanghui Office set up
+1965|Allsen, Culture and Conquest (2001)
+1966|The youngest son kept the hearth and inherited the family property (otchigin)
+1967|Wealth was counted in sheep; a herding household owned dozens to over a hundred (estimate)
+1968|Khazanov, Nomads and the Outside World
+1969|In Ming–Qing China, an estimated 30–45% of men and 2–10% of women were literate
+1970|Rawski, Education and Popular Literacy (1979)
+1971|Apprenticeships usually lasted "three years and one season" before qualifying
+1972|Ming–Qing trade customs (Chuan Han-sheng and others)
+1973|The provincial exams passed about 1–2%, out of hundreds of thousands of candidates each time
+1974|Elman, A Cultural History of Civil Examinations (2000)
+1975|The Ming garrison system decayed and late Ming relied on recruits; the Qing relied on the Eight Banners and Green Standard Army
+1976|History of Ming, Treatise on the Military
+1977|Huizhou and Shanxi merchants rose, and silver poured in
+1978|Brook, The Confusions of Pleasure (1998)
+1979|Jiangnan had many tenant farmers; rent was about half the harvest (estimate)
+1980|Research by Li Bozhong; Economic History of China: Ming
+1981|Women first married at about 17–18 on average (estimate)
+1982|Lee & Wang, One Quarter of Humanity (1999)
+1983|Betrothal gifts and dowries were heavy, and many poor men never married
+1984|Married women had about 6 births in total (estimate)
+1985|In the Chongzhen era, severe drought in North China led to recorded cannibalism
+1986|History of Ming, Treatise on the Five Phases
+1987|Buddhism, Daoism and folk religion blended, and temples took in monks and nuns
+1988|More and more people from Fujian and Guangdong went to the South Seas to make a living
+1989|Kuhn, Chinese Among Others (2008)
+1990|Tobacco arrived in the late Ming, and smoking spread fast
+1991|Benedict, Golden-Silk Smoke (2011)
+1992|The Compendium of Materia Medica was finished in 1578; ordinary people relied on itinerant doctors and herbal shops
+1993|Sons divided family property equally
+1994|Great Ming Code
+1995|Taels (of silver); a long-term farmhand earned a few taels a year (estimate)
+1996|Huang Miantang's studies of Ming prices, and others
+1997|In late Edo Japan, an estimated 40–50% of men and about 15% of women were literate
+1998|Dore, Education in Tokugawa Japan (1965)
+1999|Apprentices (hōkō) usually joined a shop around age 10 and stayed about 10 years

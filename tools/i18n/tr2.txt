@@ -1,0 +1,300 @@
+260|GDP per person
+261| int'l $ (2011)
+262|Fertility rate
+263| births
+264|Urban population
+265|Share of families like yours
+266| about 
+267|<h2>Birth Record</h2><div class="kv">
+268|</div>\n <div class="ctx">Around 
+269|, out of every 100 newborns worldwide, about 
+270| were born in 
+271|. Local population about 
+272|); births estimated as "population ÷ life expectancy" (stationary-population approximation).
+273|<br>This place and era also has a detailed era pack: "
+274|".
+275|<br>Currency: 
+276|<div class="statbox"><b>🌱 Legacy · Generation 
+277|</b>You are the descendant of the previous generation (wealth rank 
+278|). Your birth partly carries on their status.<br>
+279|<p class="dim small" style="grid-column:1/-1">Family looks after you from 0 to 5. From age 6 you can choose.</p>
+280|</span> <span class="dim small">Wealthier than about 
+281|% of people then (estimate)</span></div>\n <div class="dim small">Family: 
+282| (income percentile 
+283|)</div>
+284|<div class="brk"><span>Income this year</span><span>+
+285|<span>Living costs</span><span>−
+286|<span>Living costs</span><span>Covered by family</span>
+287|<span>Raising children</span><span>−
+288|<span>Hobbies / vices</span><span>−
+289|<p class="note" style="text-align:left">Amounts are game-converted estimates; 
+290| · Married
+291| · Children 
+292|<div class="codexnote"><b>📖 History card
+293| (new)
+294|In 
+295|, born.
+296|s until auto-skip
+297|I'll treasure the people around me.
+298|Saved only on your device (localStorage)
+299|<b>📊 Era data (estimates)</b>
+300|<b>📜 Historical background</b>
+301|<span class="odds">Chance of success: 
+302|s until auto-choice
+303|, 
+304|, age 
+305|"
+306|A life
+307|Died at
+308|</span>
+309|Cause of death
+310|Peers
+311|Outlived about 
+312| of people born the same year (model estimate)
+313|vs. average
+314|more
+315|less
+316| by about 
+317| yrs (average about 
+318|)
+319|Same cause
+320|In this era, about 
+321| of people died of "
+322|" (model estimate)
+323|Education
+324|Illiterate
+325|Marriage
+326|Married
+327|Single
+328| (religious life)
+329|Children
+330| (
+331| died young)
+332|Happiest year
+333|Estate
+334| (wealthier than about 
+335|% of people)
+336|You: 
+337| (countryside)
+338|<br><span class="dim">
+339|Blue = share still alive among people born the same year in 
+340|; dark green = Hong Kong in the 2020s; red line = your age at death. Model estimate, calibrated to 
+341|.
+342|</small>
+343|A quiet, ordinary life.
+344|One generation later: 
+345| · Wealth 
+346|<div class="statbox"><b>📊 Mobility across generations (estimate)</b>
+347|</i></div><p class="small">You have 
+348| living children. Continue as a descendant in:</p>
+349|There is no later era to continue into.
+350|No children survived this life. The family line ends here.
+351|<h2>🔁 What If… Compared</h2><div class="diff"><table><tr><td></td><td class="dim">Last time</td><td class="dim">This time</td></tr>
+352|Ending
+353|Title
+354|Both runs made exactly the same choices: the difference is pure luck.
+355|The two paths split at the choice made at age 
+356|. Birth, era and everything before the split were identical; what came after is the result of choices and luck.
+357| (new)
+358|Rebirth Roulette
+359|A pixel-art life simulator
+360|Died at 
+361|Born at the same moment: 
+362|
+363|Birth 
+364|% | Choices + luck 
+365| | Gen 
+366|Gapminder (CC BY 4.0)
+367|Our World in Data: Riley / UN / HMD
+368|Riley (2005) continental estimate (via OWID)
+369|Pre-modern estimate
+370|Volk & Atkinson (2013) pre-modern child mortality estimate (about 43%)
+371|van Zanden et al. (2014), How Was Life? (via OWID)
+372|UNESCO UIS (via OWID)
+373|World average (van Zanden; no local data)
+374|HYDE 3.x (via OWID)
+375|Maddison Project Database 2023 (via OWID)
+376|Maddison world average (no local data)
+377|Pre-modern estimate: Riley's 1770 continental level carried back (via OWID)
+378|Pre-modern estimate (near subsistence, after Maddison)
+379|Pre-modern estimate (likely under 10%)
+380|Pre-modern estimate (typically about 5–7 births)
+381|Pre-modern estimate (Bairoch 1988)
+382|HYDE 3.x (via OWID); some countries back-projected from their parent region's population share before data begins
+383|HYDE 3.x / Gapminder (via OWID) + Maddison 2023 (Ireland)
+384|Long-range interpolation between van Zanden et al. / census / historians' estimates (via OWID)
+385|Projected from the nearest real local observation using the world literacy (illiteracy) trend (van Zanden et al., via OWID)
+386|1897 Russian Empire census: about 21% literate nationwide (Great Soviet Encyclopedia, "Грамотность")
+387|Dore (1976): around 1870, about 40–50% of men and 15% of women could read and write (midpoint about 30%)
+388|Rawski (1979), Education and Popular Literacy in Ch'ing China: in the mid-to-late 19th century, 30–45% of men and 2–10% of women were literate (about 22% used)
+389|1861 Kingdom of Italy census: about 78% illiterate
+390|US census (NCES, 120 Years of American Education, Table 6: 20% illiterate in 1870, 17% in 1880, 13.3% in 1890)
+391|Maggiolo survey of marriage-register signatures (1786–90: men 47.4% / women 26.8%; 1816–20: men 54.4% / women 34.5%)
+392|Schofield (1973), Dimensions of Illiteracy, 1750–1850: English marriage-register signatures (c. 1754: men 62% / women 37%; c. 1840: men 66% / women 51%)
+393|assumed value
+394|estimate
+395|[
+396|]
+397|1 CE
+398|Bottom-fifth income family
+399|Lower-middle income family
+400|Middle income family
+401|Upper-middle income family
+402|Top-fifth income family
+403|Income quintiles: each group is one fifth of the population (by definition)
+404|Income quintile method
+405|Free person of colour
+406|Smallholder / artisan
+407|Planter
+408|18th-century Caribbean sugar colonies: enslaved people made up roughly 80% or more of the population (estimate)
+409|Eltis & Richardson, Atlas of the Transatlantic Slave Trade (2010)
+410|Peasant farmer
+411|Artisan
+412|Merchant
+413|Urban worker
+414|Elite
+415|1850 US census: enslaved people were about 13% of the population
+416|1800 US census: enslaved people were about 18% of the population
+417|US Census Bureau, Historical Statistics
+418|Free poor
+419|Estate owner
+420|Colonial Brazil: enslaved people estimated at about 30% of the population (about 15% in the 1872 census)
+421|Klein & Luna, Slavery in Brazil (2010)
+422|Factory worker
+423|Clerk / shopkeeper
+424|Professional
+425|Wealthy family
+426|Class shares in an industrial society (game estimate); income gaps after Lindert & Williamson
+427|Lindert & Williamson, Unequal Gains (2016)
+428|Landless labourer / tenant
+429|Landlord / gentry
+430|Ruling class
+431|Pre-industrial society: the vast majority farmed; the elite were only a few percent (estimate)
+432|Milanovic, Lindert & Williamson (2011), "Pre-Industrial Inequality"
+433|Literacy about 
+434|Average births per woman about 
+435| yrs; about 
+436| of children did not live to five
+437|GDP per person about 
+438| int'l $ (2011 PPP)
+439|international dollars (2011 PPP); local GDP per person about 
+440|Northwest Europe's "late marriage pattern": women first married at about 23–27, and many never married
+441|Hajnal (1965), "European Marriage Patterns"
+442|Most societies outside Europe: early marriage, and nearly everyone married
+443|Hajnal (1965); Lee & Wang (1999)
+444|1850–1914: an estimated 40 million Europeans and tens of millions of Asians migrated overseas
+445|Hatton & Williamson, The Age of Mass Migration (1998); McKeown (2004)
+446|2020: about 280 million international migrants worldwide (about 3.6% of the population)
+447|UN DESA, International Migrant Stock 2020
+448|2000: about 30% of people over 15 worldwide smoked, falling steadily since
+449|WHO, Global Report on Trends in Prevalence of Tobacco Use
+450|Over the long run stock returns are positive, but markets can fall for years in a row
+451|Dimson, Marsh & Staunton, Triumph of the Optimists (2002)
+452|Uses the era pack's class shares (estimate)
+453|int'l $
+454|See each event's source
+455|The Amarna Reform
+456|Akhenaten moved the capital to Amarna. Skeletons from Amarna's commoners' cemetery show heavy wear and malnutrition, including many young people.
+457|Rose et al., Amarna South Tombs Cemetery project (2006–)
+458|Battle of Kadesh
+459|Ramesses II fought the Hittites; both sides claimed victory, and later signed one of the oldest surviving peace treaties. The front lines were mostly ordinary foot soldiers and charioteers.
+460|Spalinger (2005); the Egyptian–Hittite peace treaty
+461|The Sea Peoples
+462|Around 1200 BCE, many city-states of the eastern Mediterranean collapsed. Under Ramesses III, the Deir el-Medina workmen struck over late grain rations: one of the earliest recorded strikes.
+463|The Turin Strike Papyrus
+464|Battle of Changping
+465|The Records of the Grand Historian says 400,000 surrendered Zhao soldiers were buried alive. The number may be exaggerated, but archaeologists have found mass burial pits there.
+466|Records of the Grand Historian, biographies of Bai Qi and Wang Jian; Gaoping (Shanxi) excavations
+467|One Script for All
+468|Qin standardised writing, weights and measures. The Shuihudi bamboo slips show local officials managing farmers with uniform legal documents.
+469|Shuihudi Qin bamboo slips
+470|The Great Wall and Imperial Roads
+471|Huge numbers of labourers were conscripted to the frontier. Qin law punished lateness harshly; Chen Sheng and Wu Guang's uprising reportedly began because they were going to arrive late.
+472|Records of the Grand Historian, "House of Chen She"
+473|The Chu–Han Contention
+474|After the wars, the early Han population had collapsed; the Records say big cities kept only 20–30% of their households.
+475|Records of the Grand Historian, tables of meritorious lords under Gaozu
+476|Rebellion of the Seven States
+477|Wu, Chu and five other states revolted; it was crushed in three months, with fighting concentrated between Liang and Wu.
+478|Records of the Grand Historian, biography of Liu Bi, King of Wu
+479|Wang Mang's Reforms
+480|Wang Mang overhauled the currency and land system. Coins were repeatedly voided, commoners' savings vanished overnight, and then the Yellow River changed course, bringing famine.
+481|Book of Han: biography of Wang Mang; Treatise on Food and Money
+482|The Great Fire of Rome
+483|The fire of 64 CE burned for six days; 3 of Rome's 14 districts were destroyed. Many commoners lived in crowded wooden apartment blocks (insulae).
+484|Tacitus, Annals 15.38–44
+485|Vesuvius
+486|Pompeii and Herculaneum were buried in ash. In Herculaneum's boathouses, about 300 people were found who had tried to flee.
+487|Pliny the Younger, Letters 6.16; Herculaneum archaeology
+488|The Antonine Plague
+489|Possibly smallpox. Scholars estimate 10–30% of the empire died; some Egyptian villages lost much of their population.
+490|Duncan-Jones (1996); Harper, The Fate of Rome (2017)
+491|Crisis of the Third Century
+492|Twenty-odd emperors in 50 years. The silver coin fell from about 50% silver to under 5%, and prices soared.
+493|Harper (2017); numismatic studies
+494|Wu Zetian's Zhou
+495|Wu Zetian expanded the civil-service exams and the palace exam, opening office to more sons of humble families.
+496|New Book of Tang, Treatise on Selection
+497|The An Lushan Rebellion
+498|About 9 million households were registered before the war; registrations collapsed afterwards (partly from people fleeing the rolls). Du Fu's "Three Officers, Three Partings" depicts families torn apart by press-gangs.
+499|Tongdian; poems of Du Fu
+500|The Huichang Persecution of Buddhism
+501|More than 4,600 monasteries were torn down; about 260,000 monks and nuns were laicised, and 150,000 temple bondservants made taxpayers.
+502|Old Book of Tang, Annals of Emperor Wuzong
+503|Huang Chao's Rebellion
+504|Huang Chao's army fought across China and took Guangzhou and Chang'an. Arabic sources say many foreign merchants in Guangzhou were killed.
+505|New Book of Tang, biography of Huang Chao; Abu Zayd, Accounts of China and India
+506|Wang Anshi's Reforms
+507|The Green Sprouts loans were meant to tide farmers over before harvest, but some officials forced them on people, making burdens heavier.
+508|History of Song, Treatise on Food and Money
+509|The Jingkang Incident
+510|Jurchen Jin troops took Kaifeng; both emperors, the imperial clan, palace women and artisans, tens of thousands in all, were carried off north.
+511|Jingkang Baishi; History of Song
+512|The Mongol Conquest of Song
+513|Xiangyang was besieged for six years (1267–1273). After it fell, Southern Song soon collapsed, and places like Sichuan lost much of their population.
+514|History of Song; Ge Jianxiong, History of China's Population
+515|The Great Famine, 1315–17
+516|Years of heavy rain ruined harvests; northern Europe lost an estimated 10% of its people, and records tell of people eating tree bark.
+517|Jordan, The Great Famine (1996)
+518|The Hundred Years' War
+519|English raiders used the chevauchée, burning villages and seizing food; French peasants suffered most.
+520|Curry; Sumption, The Hundred Years War
+521|The Black Death
+522|In 1347 it arrived in Sicily by ship from the Black Sea. The labour shortage that followed raised surviving peasants' wages, and England passed the Statute of Labourers (1351) to hold them down.
+523|Benedictow (2004); Statute of Labourers
+524|The Plague Returns
+525|The second wave of 1361 was called the "children's plague" because it hit children especially hard.
+526|Hatcher, Plague, Population and the English Economy (1977)
+527|Founding of the Mongol Empire
+528|Genghis Khan broke up the old tribes and created units of a thousand households; herders were folded into military units.
+529|The Secret History of the Mongols; Atwood (2004)
+530|The Khwarazmian Campaign
+531|Samarkand, Urgench and other cities fell; artisans were picked out and sent east, and many of the remaining residents were killed.
+532|Juvaini, History of the World Conqueror
+533|War of Succession
+534|Kublai and Ariq Böke fought for the throne; the empire then split into the Yuan dynasty and several khanates.
+535|Jackson (2005); History of Yuan
+536|Invasion of Japan
+537|In the second invasion of 1281, the Yuan fleet was wrecked by a typhoon, which Japan called the "kamikaze" (divine wind). Shipwrecks have been found on the seabed off Takashima.
+538|Takashima underwater site archaeology
+539|Little Ice Age Drought
+540|Year after year of drought and locusts under Chongzhen sent refugees wandering across Shaanxi; Li Zicheng and Zhang Xianzhong both rose up against this backdrop.
+541|History of Ming, Treatise on the Five Phases; Brook, The Troubled Empire (2010)
+542|The North China Epidemic
+543|In 1641–1644 an epidemic swept North China; some research suggests plague. Beijing's death toll was enormous.
+544|Cao Shuji (1997), plague and social change in North China
+545|The Qing Conquest
+546|When Yangzhou fell, the Account of Ten Days in Yangzhou recorded a terrible massacre. The queue order sparked resistance everywhere.
+547|Wang Xiuchu, An Account of Ten Days in Yangzhou
+548|The Great Clearance
+549|To fight Koxinga, coastal residents were forced 15–25 km inland. Today's New Territories in Hong Kong were affected too, and many villages were abandoned.
+550|Xin'an County Gazetteer; Hong Kong Museum of History
+551|The Great Fire of Meireki
+552|The 1657 Edo fire is estimated to have killed tens of thousands, perhaps 100,000. Afterwards Edo cleared firebreaks and widened its streets.
+553|Musashi Abumi; Tokyo Fire Department archives
+554|The Kyōhō Famine
+555|Locusts ruined western Japan's harvest; the shogunate then promoted sweet potatoes against famine.
+556|Tokugawa Jikki; the work of Aoki Kon'yō
+557|The Tenmei Famine
+558|Mount Asama's eruption and cold summers devastated the northeast; Hirosaki domain recorded tens of thousands of deaths.
+559|Kikuchi Isao, A Social History of Famine

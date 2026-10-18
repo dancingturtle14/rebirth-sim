@@ -1,7 +1,7 @@
 (function(){
 const $=id=>document.getElementById(id),E=Engine,Q=new URLSearchParams(location.search),QA=Q.has("auto");
 const ST=[["hea","健康","#e05c5c"],["hap","快樂","#ffcc4d"],["wis","智慧","#6ac7e0"],["soc","人脈","#a07ae0"],["wea","財富排名","#d4af37"],["fam","聲望","#7ad08a"]];
-const store={get:()=>{try{return JSON.parse(localStorage.getItem("rebirth_lives")||"[]")}catch(e){return[]}},set:v=>localStorage.setItem("rebirth_lives",JSON.stringify(v.slice(-50)))};
+const store={get:()=>{try{return JSON.parse(localStorage.getItem("rebirth_lives")||"[]")}catch(e){return[]}},set:v=>{try{localStorage.setItem("rebirth_lives",JSON.stringify(v.slice(-50)))}catch(e){}}};
 const pct=x=>(x*100<1?(x*100).toFixed(1):Math.round(x*100))+"%";
 const M=Meaning,LS=M.LS;const SET=Object.assign({reflect:true,contrast:true,gentle:false,sound:false,music:false},LS.get("rebirth_set",{}));
 ["reflect","contrast","gentle","sound","music"].forEach(k=>{const el=$("o-"+k);el.checked=SET[k];el.onchange=()=>{SET[k]=el.checked;LS.set("rebirth_set",SET);SFX.set(SET.sound,SET.music)}});

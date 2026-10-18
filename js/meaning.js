@@ -1,7 +1,7 @@
 /* 意義層：古今對照、沉澱一下、史料卡、這一生教會我、如果、傳承、成就 */
 window.Meaning=(function(){
 const pct=x=>(x*100<1?(x*100).toFixed(1):Math.round(x*100))+"%";
-const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set:(k,v)=>localStorage.setItem(k,JSON.stringify(v))};
+const LS={get:(k,d)=>{try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set:(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
 /* 古今對照 */
 function contrast(p,key,evt){const e=p.era,C=CALIB[e.id],S=STATS[e.id],M=MODERN[key];if(!M)return null;let then,src;
  if(key==="u5"){if(e.cell){then=`五歲前夭折機會約 ${pct(e.cell.u5)}`;src=e.u5Src}else{then=`五歲前夭折機會約 ${pct(C.u5)}（模型估算）`;src=e.leSrc}}

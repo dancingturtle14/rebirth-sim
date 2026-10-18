@@ -1,0 +1,260 @@
+0|BCE 
+1|
+2|Infant death
+3|Disease
+4|War
+5|Famine
+6|Plague
+7|Accident
+8|Old age
+9| (countryside)
+10|Study
+11|Wisdom↑ Joy↓
+12|Make friends
+13|Network↑ Joy↑
+14|Help the family
+15|Wealth↑ Health↓
+16|Exercise
+17|Health↑
+18|Hobbies
+19|Joy↑ Wisdom↑ (a little)
+20|Bold
+21|Risky choices succeed slightly more often
+22|Cautious
+23|Risky choices succeed a little less, but health holds steady
+24|Curious
+25|Wisdom grows slowly every year
+26|Gentle
+27|Your network grows slowly every year
+28|Cheerful
+29|Joy grows slowly every year
+30|Your character starts to show: 
+31| (
+32|).
+33|Your companion of many years, 
+34|"
+35|", has passed away.
+36|Your spouse died of illness.
+37|You and 
+38| became close friends.
+39|When money was tight, your friend 
+40| lent you enough to get through.
+41| crossed you, and you became rivals.
+42|Your rival 
+43| schemed against you behind your back, and it cost you.
+44|One of your parents died.
+45|Your other parent is gone now too.
+46|One of your children died before turning five. May they rest in peace.
+47|Died aboard a slave ship crossing the Atlantic
+48|You are seized and forced aboard a slave ship.
+49|SlaveVoyages database: Middle Passage mortality was roughly 12–15%
+50|You are seized, forced aboard a slave ship, carried across the Atlantic, and made to labour on a plantation in the Americas.
+51|SlaveVoyages database (Eltis & Richardson)
+52|A plantation across the Atlantic
+53|Enslaved person
+54|Killed in war
+55|Died in a famine
+56|Died of plague
+57|You lived to 
+58|. Of the people born in the same place and year, an estimated 
+59|% were still alive.
+60|Model estimate, calibrated to 
+61|
+62|Died in infancy
+63|Died of illness as a child
+64|Died of old age
+65|Died of illness
+66|This year you mostly 
+67|.
+68|Low
+69|Medium
+70|High
+71|Far from home
+72|: 
+73|The Scholar
+74|A Brief Visitor
+75|The Renunciant
+76|The Wanderer
+77|The Magnate
+78|The Learned One
+79|A Joyful Life
+80|The Long-Lived
+81|Friend to All
+82|An Ordinary Life
+83| wen
+84| strings of cash
+85| HKD
+86|0,000 HKD
+87|Chance of dying before age five: about 
+88| (model estimate)
+89|Life expectancy at birth: about 
+90| yrs
+91|Only the 1833 Factory Act limited child workers aged 9–13 to 9 hours a day
+92|Factory Act 1833
+93|; 
+94|<div class="now"><b>🕰 Then & Now</b><div>Then: 
+95|<div>Hong Kong today: 
+96|<div>World today: 
+97|You survived the most dangerous first five years. In this era, about 
+98| of children didn't (model estimate). When you were little, was there anything you took for granted?
+99|Fifteen years old, 
+100|literate
+101|unable to read
+102|, spending every day 
+103|. What worried you most when you were fifteen?
+104|Thirty. Of the people born the same year, about 
+105| are still alive (model estimate). If you were 
+106|, what would you most want to do next?
+107|Fifty, which counts as a long life in this era. When you picture yourself at fifty, who's around you?
+108|Seventy. 
+109|Looking back on this life, what might the biggest regret be? Could you avoid it today?
+110|Losing a child was common back then, but being common doesn't make the pain any smaller. How would you remember a very short life?
+111|An exam almost decided a person's fate. Has a test or assessment ever changed the path of your life?
+112|You left the place you knew. If you had to leave your home today, what would you take?
+113|Facing this choice, 
+114| took the path they took. Would you choose the same? Why?
+115|Flee or stay: there's rarely a good option. Many people in the world still face this today. What would you do?
+116|higher
+117|lower
+118|<p><b>Birth</b>: You were born in 
+119| as 
+120|. People born at random anywhere in the world in the same era averaged a wealth rank of about 
+121|; people born exactly where you were averaged about 
+122|. Your birth alone put you 
+123| 
+124| points.</p>
+125|<p><b>Choices & luck</b>: You made 
+126| choices and ended with a wealth rank of 
+127|, which is 
+128| points vs. others of your birth. Others born like you lived to about 
+129| on average; you lived to 
+130|.</p>
+131|%">Birth 
+132|%">Choices + luck 
+133|%</span></p><p class="note" style="text-align:left">In this model, about 
+134|% of the gap in your lifetime wealth comes from birth (comparing 30 random lives from the same birth with 30 random births worldwide in the same era).</p>
+135|<p><b>If you were born in Hong Kong today</b>: life expectancy 
+136| (then: about 
+137|), chance of dying before five 
+138|), literacy 
+139|. <span class="fn">📜 
+140|<p><b>Your reflections</b></p>
+141|<blockquote>"
+142|"<small>— at age 
+143|</small></blockquote>
+144|In Hong Kong today, few parents have to worry that their child won't live to five. That was won by generations of vaccines, clean water and medicine. Maybe say a few extra words to your family tonight.
+145|A very short life is still a whole story. It might be worth learning where in today's world children still die of preventable diseases.
+146|In the hardest moment, you chose to help. In real life, choices like that are usually small and unseen: listening to someone all the way through, or speaking up for them.
+147|Courage doesn't have to be dramatic. Next time you see something unfair, what will you do?
+148|In this life, a lot was decided the moment you were born. Next time you see someone struggling in hard circumstances, it may be worth a little more understanding.
+149|We don't choose where we're born. Seeing that clearly might make us a little kinder to ourselves and to others.
+150|Even with so little room, your choices changed the ending. You have much more room today. Is there a decision you've been putting off?
+151|Choices really do matter. Pick one small thing you can do this week, as a nod to the you of this life.
+152|First Rebirth
+153|Finish your first life
+154|Threescore and Ten
+155|Live past 70
+156|Fleeting
+157|Die before age 5
+158|Top of the Exam
+159|Earn an official degree or title
+160|Wealthier than 90% of people
+161|Self-Made
+162|Born poor, finish above the 70th wealth percentile
+163|Emigrant
+164|Renunciant
+165|Become a monk, nun or cleric
+166|Companion
+167|Adopt an animal
+168|Devoted Child
+169|Care for your parents yourself
+170|Righteous
+171|Risk sheltering someone in need
+172|Outspoken
+173|Stand up against injustice
+174|A Friend in Need
+175|Get through hard times with a friend's help
+176|Big Family
+177|Have 5 or more children
+178|Three Generations
+179|Reach generation 3
+180|Citizen of the World
+181|Be born in 5 regions
+182|A Thousand Years
+183|Be born in all 16 eras
+184|Archivist
+185|Collect 10 history cards
+186|Reflective
+187|Write 3 reflections
+188|What If
+189|Replay from the same birth
+190|Health
+191|Joy
+192|Wisdom
+193|Network
+194|Wealth rank
+195|Reputation
+196|Died young
+197|passed away.
+198|Lost in the war
+199|Lost in the famine
+200|Lost to the epidemic
+201|lost their life
+202|severe famine
+203|Gen 
+204|c. 
+205|World population then: about 
+206| billion
+207| million
+208| (HYDE 3.x) · Most likely birthplaces: 
+209|, 
+210|?
+211|<p class="note">Regions born in: 
+212| · Eras: 
+213|</p>
+214|) died at 
+215| · "
+216|"</div>
+217|No records yet
+218|<h2>Today's theme: 
+219|</span></div><button class="btn alt sm" id="b-daily">Be born in 
+220|<p class="dim small">Collected: 
+221|. Unlock more by living through major historical events.</p><div class="cx">
+222|World history
+223|<div class="lock">???<br>
+224|"<small>
+225| yrs — 
+226|<p class='dim'>No reflections written yet.</p>
+227|">Gen 
+228| · 
+229| yrs · Wealth rank 
+230|<p class='dim'>After finishing a life, choose "Legacy" to continue as your descendant.</p>
+231|: Drawing a birthplace (weighted by estimated births that year)
+232|Elsewhere
+233|: City or countryside? (HYDE urbanisation estimate)
+234|City
+235|Countryside
+236|: Which family?
+237|You've been born
+238|Name
+239|Born
+240|Male
+241|Female
+242|Place
+243|)
+244|Era
+245|Family
+246|; income around the 
+247|th percentile of the time (estimated from class shares)
+248|Father
+249| yrs · 
+250|Mother
+251|Homemaker
+252|Homemaker and helper
+253|Chance to learn to read
+254|Yes
+255|No
+256|Family wealth
+257|Life expectancy at birth
+258|Chance of dying before 5
+259|Literacy rate

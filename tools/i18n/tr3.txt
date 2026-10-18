@@ -1,0 +1,340 @@
+560|The Tenpō Famine
+561|The famine sparked Ōshio Heihachirō's revolt (1837): a former shogunate official rose up in Osaka to relieve the starving.
+562|Ōshio Heihachirō's manifesto
+563|The Black Ships
+564|Perry's squadron reached Uraga in 1853; the Treaty of Kanagawa followed the next year, ending Japan's isolation.
+565|Treaty of Kanagawa (Japan–US Treaty of Peace and Amity)
+566|Cholera, 1832
+567|Cholera reached Britain for the first time; doctors widely believed disease spread through "miasma", or bad air.
+568|Registrar General; Morris, Cholera 1832 (1976)
+569|Cholera, 1848–49
+570|Britain's second cholera wave helped bring about the first Public Health Act (1848).
+571|Public Health Act 1848
+572|The Broad Street Pump
+573|John Snow mapped the dead, traced them to the Broad Street pump, and persuaded officials to remove its handle: a classic case in epidemiology.
+574|The Great Stink
+575|In summer 1858 the Thames reeked so badly that Parliament finally funded Bazalgette's sewers; cholera all but vanished from London afterwards.
+576|Halliday, The Great Stink of London (1999)
+577|The Canton–Hong Kong Strike
+578|In 1925–26 about 200,000 Hong Kong workers went on strike and left for Guangzhou, paralysing the colony's economy for a time.
+579|A New History of Hong Kong; Carroll, A Concise History of Hong Kong
+580|The January 28 Incident
+581|Japanese forces attacked Shanghai's Zhabei district; the Commercial Press and the Oriental Library were bombed, and huge collections went up in flames.
+582|Shanghai Gazetteer
+583|The Battle of Shanghai
+584|Three months of brutal fighting in 1937. Father Jacquinot set up the Nanshi Safe Zone, sheltering about 300,000 refugees.
+585|Ristaino, The Jacquinot Safe Zone (2008)
+586|The Fall of Hong Kong
+587|Under Japanese occupation, a "return to the homeland" policy forced residents out; the population fell from about 1.6 million to about 600,000.
+588|A New History of Hong Kong; Snow, The Fall of Hong Kong (2003)
+589|The Great Depression
+590|About 6 million Germans were unemployed in 1932 and US unemployment was about 25%; many families lived on relief.
+591|Eichengreen, Golden Fetters (1992)
+592|The Second World War
+593|More civilians died than soldiers, including about 6 million Jews in the Holocaust.
+594|Our World in Data; US Holocaust Memorial Museum
+595|The Siege of Leningrad
+596|The siege lasted about 872 days; an estimated 800,000 civilians died, most of them from starvation.
+597|Reid, Leningrad (2011)
+598|The Handover of Hong Kong
+599|On 1 July 1997 Hong Kong returned to China under "one country, two systems".
+600|Sino-British Joint Declaration; Basic Law
+601|The Asian Financial Crisis
+602|From 1997 to 2003 property prices fell about 65% in total, leaving many owners in negative equity.
+603|Rating and Valuation Department price index
+604|In 2003, 1,755 people in Hong Kong were infected and 299 died; the Amoy Gardens outbreak was a key turning point.
+605|Department of Health; World Health Organization
+606|The Global Financial Crisis
+607|Lehman Brothers collapsed in 2008, and many Hong Kong residents lost money on Lehman minibonds.
+608|HKMA; Securities and Futures Commission
+609|COVID-19
+610|In the fifth wave of 2022, most of those who died were unvaccinated older people.
+611|Centre for Health Protection
+612|Scheidel, Death on the Nile (2001), estimate
+613| deben
+614|After Kemp, Ancient Egypt, and other general histories
+615|Scholarly estimates such as Ge Jianxiong, History of China's Population
+616| coins
+617|After the Records of the Grand Historian and the Book of Han
+618|Frier (2000); Scheidel (2001) estimates
+619| denarii
+620|After Tacitus, Pliny and others; Duncan-Jones (1996)
+621|General scholarly estimate for the Tang population (including infant deaths)
+622|After the Old and New Books of Tang and the Zizhi Tongjian
+623|General scholarly estimate for the Song population (including infant deaths)
+624|After the History of Song and the Xu Zizhi Tongjian Changbian
+625|Russell; Hatcher (1986) estimates for 14th-century England
+626| pence
+627|After Benedictow (2004); Jordan, The Great Famine (1996)
+628|General estimate for pre-modern societies (Our World in Data)
+629| sheep
+630|After The Secret History of the Mongols and History of Yuan; Atwood (2004)
+631|Lee & Wang, One Quarter of Humanity (1999), and other estimates
+632| taels
+633|After the History of Ming and Draft History of Qing
+634|Hanley & Yamamura (1977); Hayami Akira's studies of temple registers
+635|After Kikuchi Isao, A Social History of Famine, and others
+636|Wrigley & Schofield (1981); Szreter & Mooney (1998) urban estimates
+637|After Registrar General reports; Snow (1855)
+638|Barclay et al. (1976); urban estimates (Our World in Data)
+639| silver dollars
+640|After the Shanghai Gazetteer and histories of Hong Kong
+641|Our World in Data: European life expectancy at birth, 1930s
+642| yuan
+643|After Our World in Data; Snyder, Bloodlands
+644|Census and Statistics Department, Hong Kong Life Tables
+645|After the Census and Statistics Department and Hong Kong Yearbook
+646|Benedictow, The Black Death (2004)
+647|Snow, On the Mode of Communication of Cholera (1855)
+648|New Kingdom Egypt
+649|Thebes
+650|Memphis
+651|Amarna
+652|the Nile Delta
+653|about 20–30
+654|Scribe
+655|Priest
+656|Servant
+657|Noble
+658|Amenem
+659|Seti
+660|Paser
+661|Kenna
+662|Ramose
+663|Ineni
+664|Nefti
+665|Merit
+666|Tawa
+667|Iset
+668|Henut
+669|Sat
+670|farm the fields
+671|make mud bricks
+672|copy papyri
+673|build temples
+674|herd cattle
+675|Akhenaten pushes a new religion, and the old temples are neglected.
+676|The Battle of Kadesh: Pharaoh marches to war.
+677|The "Sea Peoples" raid the Mediterranean coast, and grain prices rise.
+678|Warring States to Qin–Han China
+679|Xianyang
+680|Chang'an
+681|Luoyang
+682|Linzi
+683|Handan
+684|about 25–30
+685|Scholar
+686|Convict / bondservant
+687|Wang
+688|Li
+689|Zhang
+690|Liu
+691|Chen
+692|Zhao
+693|Han
+694|Wu
+695|Zhou
+696|Xi
+697|Heifu
+698|Jing
+699|Guang
+700|Sheng
+701|Xin
+702|Hui
+703|Anguo
+704|Ao
+705|Ji
+706|Ying
+707|E
+708|Jun
+709|Su
+710|do corvée labour
+711|cast bronze
+712|sell salt
+713|read bamboo slips
+714|The Battle of Changping: Zhao's army is crushed.
+715|Qin unifies the realm: one script, one axle width.
+716|The court conscripts labourers for the Great Wall and imperial roads.
+717|Chen Sheng and Wu Guang rise up; Chu and Han fight for the empire.
+718|The Rebellion of the Seven States.
+719|Wang Mang's reforms plunge the realm into chaos.
+720|The Roman Empire
+721|Rome
+722|Alexandria
+723|Carthage
+724|Antioch
+725|Pompeii
+726|Free farmer
+727|Urban plebeian
+728|Slave
+729|Equestrian
+730|Senatorial noble
+731|Marcus
+732|Lucius
+733|Gaius
+734|Titus
+735|Quintus
+736|Sextus
+737|Julia
+738|Cornelia
+739|Claudia
+740|Livia
+741|Tullia
+742|Aurelia
+743|tend the vineyard
+744|serve as a legionary
+745|run a bakery
+746|plead cases
+747|build Roman roads
+748|The Great Fire of Rome.
+749|Vesuvius erupts and buries Pompeii.
+750|The Antonine Plague spreads through the empire.
+751|The Crisis of the Third Century: emperors come and go.
+752|Tang China
+753|Yangzhou
+754|Guangzhou
+755|Dunhuang
+756|about 30
+757|Aristocratic clan
+758|Outcast / bondservant
+759|Imperial kin
+760|Cui
+761|Lu
+762|Zheng
+763|Yang
+764|Du
+765|Pei
+766|Shouyi
+767|Yuanli
+768|Huairen
+769|Xuanji
+770|Zi'ang
+771|Siyuan
+772|Wan'er
+773|Shiniang
+774|Yu
+775|Yunying
+776|Tao
+777|Rui
+778|weave silk
+779|trade in the West Market
+780|write poetry
+781|guard the frontier
+782|Wu Zetian takes the throne and renames the dynasty Zhou.
+783|The An Lushan Rebellion: Chang'an falls.
+784|The Huichang persecution of Buddhism.
+785|Huang Chao's Rebellion.
+786|Song China
+787|Kaifeng
+788|Lin'an
+789|Quanzhou
+790|Suzhou
+791|Chengdu
+792|Scholar-official
+793|Tenant farmer
+794|Imperial clansman
+795|Su
+796|Fan
+797|Ouyang
+798|Lu
+799|Xin
+800|Huang
+801|Shen
+802|Zizhan
+803|Xiwen
+804|Wuguan
+805|You'an
+806|Boren
+807|Defu
+808|Qingzhao
+809|Huiniang
+810|Shuzhen
+811|Qiao'er
+812|Erniang
+813|Xiulan
+814|grow rice
+815|print books
+816|tell stories in the pleasure quarters
+817|trade by sea
+818|fire porcelain
+819|Wang Anshi's reforms.
+820|The Jingkang Incident: Jin troops take Kaifeng.
+821|The Mongols push south.
+822|Medieval Europe
+823|Florence
+824|Paris
+825|London
+826|Bruges
+827|Cologne
+828|about 25–35
+829|Serf
+830|Free peasant
+831|Artisan / guild member
+832|Cleric
+833|Knightly noble
+834|John
+835|William
+836|Pierre
+837|Giovanni
+838|Hans
+839|Thomas
+840|Matilda
+841|Agnes
+842|Beatrice
+843|Joan
+844|Isabella
+845|Margaret
+846|work the lord's fields
+847|weave wool
+848|work the forge
+849|copy scripture
+850|go on pilgrimage
+851|The Great Famine: years of rain, years of failed harvests.
+852|The Hundred Years' War breaks out between England and France.
+853|The Black Death sweeps Europe, killing an estimated 30–50% of the population.
+854|The plague returns.
+855|The Mongol Empire
+856|Karakorum
+857|Dadu (Khanbaliq)
+858|Samarkand
+859|Tabriz
+860|the steppe
+861|Herder
+862|Captive artisan
+863|Warrior
+864|Noyan noble
+865|Temür
+866|Batu
+867|Temüjin
+868|Qubilai
+869|Arigh
+870|Noqai
+871|Qulan
+872|Sorqa
+873|Ele
+874|Kököchin
+875|Saran
+876|Chichige
+877|herd horses
+878|ride for the relay posts
+879|trade on the Silk Road
+880|practise archery
+881|tan hides
+882|Genghis Khan unites the Mongol tribes.
+883|The western campaign against Khwarazm.
+884|A war of succession splits the empire.
+885|The invasion of Japan is wrecked by a typhoon.
+886|Late Ming to Early Qing
+887|Beijing
+888|Nanjing
+889|Xi'an
+890|Gentry
+891|Hereditary noble
+892|Zhu
+893|Gu
+894|Yanwu
+895|Zongxi
+896|Dacheng
+897|Chengchou
+898|Yunzhong
+899|Tingyu

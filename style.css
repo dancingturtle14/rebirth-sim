@@ -85,3 +85,5 @@ input[type=range]{width:100%;accent-color:var(--ac);height:28px}
 .est{display:inline-block;margin-left:6px;padding:0 4px;font-size:11px;line-height:16px;border:1px solid;vertical-align:middle}
 .est-a{color:#ffb86b;border-color:#ffb86b}
 .est-e{color:#9fd3ff;border-color:#9fd3ff}
+
+.langsw{position:absolute;top:8px;right:10px;z-index:5;font-size:13px;padding:3px 8px;background:#3a3158;color:var(--ink);text-decoration:none;box-shadow:0 0 0 2px var(--bd)}main{position:relative}

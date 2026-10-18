@@ -1,0 +1,370 @@
+1250|Resolve to quit
+1251|You manage to quit.
+1252|You can't quit, and slide back in.
+1253|Carry on as before
+1254|Health↓ Wealth↓
+1255|You carry on as before.
+1256|You're seriously ill, and your family is worried.
+1257|You fall gravely ill.
+1258|Call a doctor / buy medicine
+1259|Wealth↓, better chance of recovery
+1260|Costs about 0.4 years' income
+1261|You recover.
+1262|Your illness gets worse.
+1263|Pray / try folk remedies
+1264|You slowly get better.
+1265|Your condition deteriorates.
+1266|It drags on for a long time.
+1267|Tough it out
+1268|Health↓↓
+1269|You pull through.
+1270|It takes a heavy toll on you.
+1271|Your parents have died. How will the estate be divided?
+1272|Fight for your share
+1273|Wealth↑ Network↓
+1274|You get a bigger share, but your siblings grow distant.
+1275|Split it by custom
+1276|The estate is divided according to custom.
+1277|Give up your share
+1278|Network↑ Reputation↑
+1279|You let your siblings have it and earn a good name.
+1280|What will you do?
+1281|Flee with the whole family
+1282|Wealth↓ Health↓
+1283|Disaster strikes on the road.
+1284|Died while fleeing
+1285|You reach somewhere safer.
+1286|Stay and guard your home
+1287|Higher risk
+1288|You stay, hoping the storm will pass.
+1289|Spend your wealth on protection
+1290|Wealth↓↓ Safety↑
+1291|Your money buys you protection.
+1292|cat
+1293|ox
+1294|dog
+1295|horse
+1296|A 
+1297| seems to want to follow you.
+1298|Take it in
+1299|Joy↑ Wealth↓ (a little)
+1300|Lucky
+1301|Blackie
+1302|Snowy
+1303|Bean
+1304|You take in 
+1305|Let it go
+1306|It slowly wanders off.
+1307|The rift between you and your spouse keeps growing.
+1308|Separate
+1309|Joy? Network↓ Wealth↓
+1310|The church didn't allow divorce at the time
+1311|You separate and start over.
+1312|You can't get a divorce, and things get worse.
+1313|Endure it
+1314|Joy↓
+1315|You choose to keep the marriage going.
+1316|Try to mend it
+1317|You talk it through, and things get better.
+1318|You try, but nothing changes.
+1319|Your parents are getting old and frail and need looking after.
+1320|Care for them yourself
+1321|Network↑ Wealth↓ Health↓ (a little)
+1322|You stay with your parents through their final years.
+1323|Pay for help / leave it to siblings
+1324|You pay to arrange their care.
+1325|You can barely cope yourself
+1326|You can't manage it, and you feel guilty.
+1327|You've reached retirement age and can draw your MPF.
+1328|It's time to consider retiring and handing the household to the next generation.
+1329|You can't do heavy work any more, and you worry about old age.
+1330|You're getting older. Is it time to put down your work?
+1331|Retire / hand over
+1332|Health↑ Income↓
+1333|You slow down and enjoy your later years.
+1334|Keep working
+1335|You keep working.
+1336|The stock market is red-hot, and a friend urges you to buy in.
+1337|People are speculating on rice prices at the Dōjima rice market.
+1338|Everyone's talking about railway shares.
+1339|Someone is buying up jiaozi paper money, saying it will rise in value.
+1340|Everyone is scrambling to buy rubber shares.
+1341|Your broker says the market can only go up.
+1342|A merchant wants a loan and will pay high interest.
+1343|The money shop invites you to lend at interest.
+1344|Someone pitches you an investment.
+1345|Put in 30% of your wealth
+1346|Wealth↑ or ↓
+1347|You make a tidy profit.
+1348|The market crashes, and you lose most of it.
+1349|Pass
+1350|You stay out of it.
+1351|Late at night there's a knock: a family on the run from a search party begs you to hide them.
+1352|A family of refugees begs you for somewhere to shelter.
+1353|A fugitive begs you to take them in.
+1354|Someone outside the walls wants to get into the city, but the guards say they may be sick.
+1355|Someone begs you to take them in.
+1356|Take them in
+1357|Network↑ Reputation↑, risky
+1358|You risk sheltering them, and in the end they leave safely.
+1359|You're found out and punished.
+1360|Point them somewhere else
+1361|You give them a little food and point the way.
+1362|Shut the door
+1363|Safe
+1364|You shut the door. For many nights afterwards, you can't sleep.
+1365|You find out your boss is taking bribes.
+1366|You see child workers being abused at the factory.
+1367|You see local officials bullying your neighbours.
+1368|Speak up and complain
+1369|Reputation↑ or retaliation
+1370|Your complaint is heard, and your neighbours are grateful.
+1371|You face retaliation.
+1372|Quietly help the victims
+1373|You quietly help the people who were wronged.
+1374|Keep your head down
+1375|You choose to stay silent.
+1376|about 0.2–0.3%
+1377|about 3.7%
+1378|Census and Statistics Department; UN IGME, Levels & Trends in Child Mortality 2023
+1379|about 73
+1380|Census and Statistics Department, Hong Kong Population Projections; UN World Population Prospects 2024
+1381|over 95%
+1382|about 87%
+1383|Census and Statistics Department; UNESCO UIS 2023
+1384|12 years of free education; almost every school-age child is enrolled
+1385|about 250 million children out of school
+1386|Education Bureau; UNESCO Global Education Monitoring Report 2023
+1387|about 700 million people chronically hungry (about 9% of humanity)
+1388|FAO, The State of Food Security and Nutrition in the World 2024
+1389|median working week about 44 hours
+1390|Census and Statistics Department, Earnings and Hours statistics
+1391|about 0.75
+1392|about 2.3
+1393|Census and Statistics Department; UN WPP 2024
+1394|In 2023 about 120 million people worldwide were displaced by conflict and persecution
+1395|UNHCR, Global Trends 2024
+1396|Smallpox was declared eradicated in 1980; plague can now be cured with antibiotics
+1397|World Health Organization (WHO)
+1398|China
+1399|the Jiangnan water towns
+1400|the North China Plain
+1401|the Sichuan Basin
+1402|Lingnan
+1403|Guanzhong
+1404|Shitou
+1405|Daniu
+1406|Yong'an
+1407|Deming
+1408|Guihua
+1409|Yulan
+1410|Amei
+1411|Chunmei
+1412|Shufen
+1413|weave cloth
+1414|carry loads on a shoulder pole
+1415|go to market
+1416|Kowloon City
+1417|Aberdeen
+1418|Yuen Long
+1419|Chi-wai
+1420|Kwok-keung
+1421|Mei-ling
+1422|fish
+1423|The Indian subcontinent
+1424|the Ganges Plain
+1425|Bengal
+1426|Punjab
+1427|the Deccan Plateau
+1428|the Tamil country
+1429|Ram
+1430|Amar
+1431|Vijay
+1432|Muhammad
+1433|Krishna
+1434|Lakshmi
+1435|Priya
+1436|Sita
+1437|Fatima
+1438|Asha
+1439|cut sugar cane
+1440|Japan
+1441|Kantō
+1442|Kinki
+1443|Kyūshū
+1444|Tōhoku
+1445|Hokuriku
+1446|Tarō
+1447|Jirō
+1448|Yokichi
+1449|Ken'ichi
+1450|Hiroshi
+1451|Hanako
+1452|Sachiko
+1453|Misaki
+1454|Takahashi
+1455|raise silkworms
+1456|do manual labour
+1457|The Korean Peninsula
+1458|Hanyang
+1459|Gyeongsang
+1460|Jeolla
+1461|Pyeongan
+1462|Cheol-su
+1463|Yeong-ho
+1464|Seok
+1465|Man-bok
+1466|Yeong-hui
+1467|Sun-ja
+1468|Bok-rye
+1469|Jeong-suk
+1470|Kim
+1471|Park
+1472|Mainland Southeast Asia
+1473|the Mekong Delta
+1474|the Chao Phraya plain
+1475|the Irrawaddy valley
+1476|the Red River plain
+1477|Somchai
+1478|Nguyen Van
+1479|Maung Maung
+1480|Khun
+1481|Sura
+1482|Nguyen Thi
+1483|Ma Ma
+1484|Lien
+1485|tap rubber
+1486|Island Southeast Asia
+1487|Java
+1488|Luzon
+1489|the Malay Peninsula
+1490|Sumatra
+1491|Agung
+1492|Juan
+1493|Ahmad
+1494|Sudi
+1495|Siti
+1496|Nur
+1497|Dewi
+1498|grow spices
+1499|The Central Asian steppe
+1500|the Mongolian Plateau
+1501|Transoxiana
+1502|the Kazakh steppe
+1503|the Fergana Valley
+1504|Nurlan
+1505|Ali
+1506|Aygul
+1507|Sara
+1508|Nadira
+1509|herd sheep
+1510|drive camels
+1511|weave felt
+1512|Persia / Afghanistan
+1513|Isfahan
+1514|Shiraz
+1515|Khorasan
+1516|Kabul
+1517|Reza
+1518|Dariush
+1519|Hassan
+1520|Shirin
+1521|Pari
+1522|Maryam
+1523|weave carpets
+1524|herd sheep
+1525|travel with caravans
+1526|The Middle East
+1527|Mesopotamia
+1528|the Levant
+1529|the Arabian Peninsula
+1530|Damascus
+1531|Ahmed
+1532|Yusuf
+1533|Omar
+1534|Aisha
+1535|Layla
+1536|Zaynab
+1537|grow date palms
+1538|Anatolia
+1539|Istanbul
+1540|Ankara
+1541|Izmir
+1542|the Black Sea coast
+1543|Mustafa
+1544|Ahmet
+1545|Mehmet
+1546|Halil
+1547|Ayşe
+1548|Zeynep
+1549|Hatice
+1550|Egypt
+1551|Cairo
+1552|Upper Egypt
+1553|Hana
+1554|grow cotton
+1555|The Maghreb (North Africa)
+1556|Morocco
+1557|Algiers
+1558|Tunis
+1559|Tripoli
+1560|Abdullah
+1561|Karim
+1562|Idris
+1563|Yasmin
+1564|Khadija
+1565|grow olives
+1566|West Africa
+1567|the Niger valley
+1568|Yorubaland
+1569|Asante
+1570|Senegambia
+1571|the Hausa city-states
+1572|Olu
+1573|Kofi
+1574|Amadou
+1575|Musa
+1576|Chinedu
+1577|Ama
+1578|Ade
+1579|Fatou
+1580|grow yams
+1581|grow millet
+1582|Central Africa
+1583|the Congo basin
+1584|the Cameroon highlands
+1585|Angola
+1586|the shores of Lake Chad
+1587|Mbemba
+1588|Kalonga
+1589|Nzu
+1590|Bakari
+1591|Nzi
+1592|Karanga
+1593|Imani
+1594|grow cassava
+1595|hunt
+1596|forage
+1597|East Africa
+1598|the Ethiopian Highlands
+1599|the Rift Valley
+1600|the Swahili coast
+1601|the shores of Lake Victoria
+1602|Madagascar
+1603|Abebe
+1604|Mwangi
+1605|Otieno
+1606|Hamisi
+1607|Makeda
+1608|Wambui
+1609|Achieng
+1610|Zewditu
+1611|grow coffee
+1612|grow sorghum
+1613|Southern Africa
+1614|the Cape
+1615|Natal
+1616|the Zimbabwe plateau
+1617|the Zambezi valley
+1618|Thembo
+1619|Sizwe
