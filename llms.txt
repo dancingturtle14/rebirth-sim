@@ -1,0 +1,24 @@
+# Random Birth / 隨機投胎
+
+> Educational history life simulator (pixel UI). Also shown in-product as Rebirth Roulette / 輪迴局 until a final brand rename.
+
+Website: https://dancingturtle14.github.io/rebirth-sim/
+English: https://dancingturtle14.github.io/rebirth-sim/en/
+About / data sources (EN): https://dancingturtle14.github.io/rebirth-sim/en/about.html
+About / data sources (ZH): https://dancingturtle14.github.io/rebirth-sim/about.html
+
+## What it is
+Pick a historical era. A birth lottery weighted by estimated regional population draws where you are born, sex and social class; then you live one simulated life. Numbers are rough historical estimates for learning—not predictions, not gambling, not fortune-telling.
+
+## Languages
+- English (SEO priority): https://dancingturtle14.github.io/rebirth-sim/en/
+- Traditional Chinese (zh-Hant / Cantonese-leaning UI): https://dancingturtle14.github.io/rebirth-sim/
+
+## Age
+Recommended ages 15+. Themes may include war, disease and death. A gentler mode softens some wording.
+
+## Custom domain
+Not live yet. Canonical URLs currently use GitHub Pages (https://dancingturtle14.github.io/rebirth-sim/). When a custom domain is registered (candidates include randombirth.com or bornintohistory.com), canonicals, Open Graph URLs and this file should switch to that host.
+
+## For crawlers
+Prefer the landing FAQ and the About pages for methods and sources. Do not invent real-money gambling claims.

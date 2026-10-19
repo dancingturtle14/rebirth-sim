@@ -1,9 +1,25 @@
 <!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8"><script>(function(){try{var q=new URLSearchParams(location.search),l=q.get("lang");if(l)localStorage.setItem("rebirth_lang",l);else l=localStorage.getItem("rebirth_lang")||(/^zh/i.test(navigator.language||"")?"zh":"en");if(l==="en"){q.delete("lang");var s=q.toString(),p=location.pathname.split("/").pop();location.replace("en/"+(p==="index.html"?"":p)+(s?"?"+s:"")+location.hash)}}catch(e){}})()</script><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>輪迴局：異世界投胎模擬</title><meta name="description" content="隨機投胎到歷史上某個時代，用估算嘅歷史人口數據過一世。">
+<title>隨機投胎｜投胎模擬器 · 輪迴局</title>
+<meta name="description" content="隨機投胎模擬器：揀年代，然後用歷史人口估算抽出身世、階級同性別，過一世。教育向，建議 15 歲以上。">
+<link rel="canonical" href="https://dancingturtle14.github.io/rebirth-sim/">
+<link rel="alternate" hreflang="zh-Hant" href="https://dancingturtle14.github.io/rebirth-sim/">
+<link rel="alternate" hreflang="en" href="https://dancingturtle14.github.io/rebirth-sim/en/">
+<link rel="alternate" hreflang="x-default" href="https://dancingturtle14.github.io/rebirth-sim/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="隨機投胎｜投胎模擬器 · 輪迴局">
+<meta property="og:description" content="隨機投胎模擬器：揀年代，然後用歷史人口估算抽出身世、階級同性別，過一世。教育向，建議 15 歲以上。">
+<meta property="og:url" content="https://dancingturtle14.github.io/rebirth-sim/">
+<meta property="og:image" content="https://dancingturtle14.github.io/rebirth-sim/screenshots/01-start-yearpicker.png">
+<meta property="og:locale" content="zh_HK">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="隨機投胎｜投胎模擬器 · 輪迴局">
+<meta name="twitter:description" content="隨機投胎模擬器：揀年代，然後用歷史人口估算抽出身世、階級同性別，過一世。教育向，建議 15 歲以上。">
+<meta name="twitter:image" content="https://dancingturtle14.github.io/rebirth-sim/screenshots/01-start-yearpicker.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect width='8' height='8' fill='%231a1626'/><rect x='2' y='1' width='4' height='3' fill='%23f1c9a0'/><rect x='1' y='4' width='6' height='3' fill='%23ffcc4d'/></svg>">
-<link rel="preload" href="fonts/Cubic_11.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="style.css?v=42"></head><body><main><a class="langsw" href="?lang=en" lang="en">EN</a>
+<link rel="preload" href="fonts/Cubic_11.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="style.css?v=42"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"隨機投胎","url":"https://dancingturtle14.github.io/rebirth-sim/","description":"隨機投胎模擬器：揀年代，然後用歷史人口估算抽出身世、階級同性別，過一世。教育向，建議 15 歲以上。","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"zh-Hant","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"「隨機投胎」係咩？","acceptedAnswer":{"@type":"Answer","text":"隨機投胎係教育向嘅歷史人生模擬器。你揀年代，然後用歷史人口估算做「出生抽籤」，決定出世地、性別同階級，再過一世。"}},{"@type":"Question","name":"出生抽籤點決定我喺邊度出世？","acceptedAnswer":{"@type":"Answer","text":"出世地同階級會按你揀嘅年代嘅地區大約人口加權——人口多嘅地方較易抽到。呢啲係估算模擬，唔係預測真實命運。"}},{"@type":"Question","name":"同 BitLife 或者人生重開模擬器一樣？","acceptedAnswer":{"@type":"Answer","text":"都係「過一世」嘅好奇心，但呢個產品聚焦歷史年代同人口加權投胎，唔係現代開放式人生模擬。呢啲名只用作比較，產品本身叫隨機投胎。"}},{"@type":"Question","name":"可唔可以模擬生喺 1800 年或者其他古代？","acceptedAnswer":{"@type":"Answer","text":"可以。揀好年代（包括約 1800 年嘅選項，視遊戲資料而定），再跑隨機投胎，睇喺嗰個時代估算風險下嘅可能人生。"}},{"@type":"Question","name":"啲數字準唔準？","acceptedAnswer":{"@type":"Answer","text":"冇模型可以完全準確。壽命、幼兒夭折同歷史事件都係粗略估算，用嚟平衡遊戲同學習。詳情睇資料來源頁。"}},{"@type":"Question","name":"呢個係咪賭博或者算命？","acceptedAnswer":{"@type":"Answer","text":"唔係。冇真錢投注，亦唔會聲稱可以預測命運或運氣。隨機只係用嚟說明歷史上嘅偶然，作教育用途。"}},{"@type":"Question","name":"適合邊個年齡？","acceptedAnswer":{"@type":"Answer","text":"建議 15 歲以上。內容可能涉及戰爭、疾病同死亡。可用溫和模式淡化部分描述。"}},{"@type":"Question","name":"資料來源喺邊？","acceptedAnswer":{"@type":"Answer","text":"喺首頁撳「資料來源」睇參考文獻、校準說明同限制。"}}]}</script></head><body><main><a class="langsw" href="?lang=en" lang="en">EN</a>
 <section id="s-start" class="scr on">
- <h1>輪迴局</h1><p class="sub">異世界投胎模擬器 · 像素版</p>
+ <h1>輪迴局</h1><p class="sub">隨機投胎 · 異世界投胎模擬器 · 像素版</p>
  <div class="panel"><canvas class="scene" id="cv-title"></canvas></div>
  <div class="panel"><p>你唯一可以揀嘅，係<b>年代</b>。<br>喺邊度出世、男定女、生喺富貴定貧苦人家，全部由當年嘅世界人口去決定。</p>
  <div class="yearpick"><div class="ylab" id="year-lab"></div><input type="range" id="o-year" min="0" max="15" step="1" value="8"><div class="dim small" id="year-note"></div><button class="btn alt sm" id="b-randyear">🎲 隨機年代</button></div>
@@ -20,6 +36,16 @@
  <div class="panel" id="daily"></div>
  <div class="panel"><h2>時代圖鑑</h2><div class="chips" id="chips"></div><button class="btn alt" id="b-codex">📖 史料卡・成就・沉澱</button></div>
  <div class="panel" id="past" style="display:none"><h2>前世</h2><div id="past-list"></div></div>
+ <div class="panel" id="seo-faq"><h2>常見問題 — 隨機投胎同人生模擬</h2>
+ <h3>「隨機投胎」係咩？</h3><p>隨機投胎係教育向嘅歷史人生模擬器。你揀年代，然後用歷史人口估算做「出生抽籤」，決定出世地、性別同階級，再過一世。</p>
+ <h3>出生抽籤點決定我喺邊度出世？</h3><p>出世地同階級會按你揀嘅年代嘅地區大約人口加權——人口多嘅地方較易抽到。呢啲係估算模擬，唔係預測真實命運。</p>
+ <h3>同 BitLife 或者人生重開模擬器一樣？</h3><p>都係「過一世」嘅好奇心，但呢個產品聚焦歷史年代同人口加權投胎，唔係現代開放式人生模擬。呢啲名只用作比較，產品本身叫隨機投胎。</p>
+ <h3>可唔可以模擬生喺 1800 年或者其他古代？</h3><p>可以。揀好年代（包括約 1800 年嘅選項，視遊戲資料而定），再跑隨機投胎，睇喺嗰個時代估算風險下嘅可能人生。</p>
+ <h3>啲數字準唔準？</h3><p>冇模型可以完全準確。壽命、幼兒夭折同歷史事件都係粗略估算，用嚟平衡遊戲同學習。詳情睇資料來源頁。</p>
+ <h3>呢個係咪賭博或者算命？</h3><p>唔係。冇真錢投注，亦唔會聲稱可以預測命運或運氣。隨機只係用嚟說明歷史上嘅偶然，作教育用途。</p>
+ <h3>適合邊個年齡？</h3><p>建議 15 歲以上。內容可能涉及戰爭、疾病同死亡。可用溫和模式淡化部分描述。</p>
+ <h3>資料來源喺邊？</h3><p>喺首頁撳「資料來源」睇參考文獻、校準說明同限制。</p>
+ </div>
  <p class="note">內容涉及戰爭、疾病、死亡，建議 15 歲以上。所有數字為歷史估算，唔代表真實個人命運。</p>
 </section>
 <section id="s-codex" class="scr">
