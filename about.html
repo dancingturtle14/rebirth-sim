@@ -1,20 +1,20 @@
-<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect width='8' height='8' fill='%231a1626'/><rect x='2' y='1' width='4' height='3' fill='%23f1c9a0'/><rect x='1' y='4' width='6' height='3' fill='%23ffcc4d'/></svg>"><script>(function(){try{var q=new URLSearchParams(location.search),l=q.get("lang");if(l)localStorage.setItem("rebirth_lang",l);else l=localStorage.getItem("rebirth_lang")||(/^zh/i.test(navigator.language||"")?"zh":"en");if(l==="en"){q.delete("lang");var s=q.toString(),p=location.pathname.split("/").pop();location.replace("en/"+(p==="index.html"?"":p)+(s?"?"+s:"")+location.hash)}}catch(e){}})()</script><meta name="viewport" content="width=device-width,initial-scale=1"><title>隨機投胎 · 資料來源與方法</title>
-<meta name="description" content="隨機投胎點樣估算歷史人口、死亡率同事件。資料來源、校準說明同限制。教育向模擬器。">
+<!doctype html><html lang="zh-Hant-HK"><head><meta charset="utf-8"><link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><rect width='8' height='8' fill='%231a1626'/><rect x='2' y='1' width='4' height='3' fill='%23f1c9a0'/><rect x='1' y='4' width='6' height='3' fill='%23ffcc4d'/></svg>"><script>(function(){try{var q=new URLSearchParams(location.search),l=q.get("lang");if(l)localStorage.setItem("rebirth_lang",l);if(l==="en"){q.delete("lang");var s=q.toString(),p=location.pathname.split("/").pop();location.replace("en/"+(p==="index.html"?"":p)+(s?"?"+s:"")+location.hash)}}catch(e){}})()</script><meta name="viewport" content="width=device-width,initial-scale=1"><title>隨機投胎 · 資料來源與方法</title>
+<meta name="description" content="說明隨機投胎點樣用歷史人口、死亡率同事件數據估算一世人生：資料集出處、校準方法、假設值標示同限制。教育向模擬器，建議 15 歲以上，唔係算命或賭博。">
 <link rel="canonical" href="https://dancingturtle14.github.io/rebirth-sim/about.html">
 <link rel="alternate" hreflang="zh-Hant" href="https://dancingturtle14.github.io/rebirth-sim/about.html">
 <link rel="alternate" hreflang="en" href="https://dancingturtle14.github.io/rebirth-sim/en/about.html">
 <link rel="alternate" hreflang="x-default" href="https://dancingturtle14.github.io/rebirth-sim/en/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="隨機投胎 · 資料來源與方法">
-<meta property="og:description" content="隨機投胎點樣估算歷史人口、死亡率同事件。資料來源、校準說明同限制。教育向模擬器。">
+<meta property="og:description" content="說明隨機投胎點樣用歷史人口、死亡率同事件數據估算一世人生：資料集出處、校準方法、假設值標示同限制。教育向模擬器，建議 15 歲以上，唔係算命或賭博。">
 <meta property="og:url" content="https://dancingturtle14.github.io/rebirth-sim/about.html">
 <meta property="og:image" content="https://dancingturtle14.github.io/rebirth-sim/screenshots/01-start-yearpicker.png">
 <meta property="og:locale" content="zh_HK">
 <meta property="og:locale:alternate" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="隨機投胎 · 資料來源與方法">
-<meta name="twitter:description" content="隨機投胎點樣估算歷史人口、死亡率同事件。資料來源、校準說明同限制。教育向模擬器。">
-<meta name="twitter:image" content="https://dancingturtle14.github.io/rebirth-sim/screenshots/01-start-yearpicker.png"><link rel="stylesheet" href="style.css?v=42"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"隨機投胎 — 資料來源","url":"https://dancingturtle14.github.io/rebirth-sim/about.html","description":"隨機投胎點樣估算歷史人口、死亡率同事件。資料來源、校準說明同限制。教育向模擬器。","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"zh-Hant","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script></head><body><main><a class="langsw" href="?lang=en" lang="en">EN</a>
+<meta name="twitter:description" content="說明隨機投胎點樣用歷史人口、死亡率同事件數據估算一世人生：資料集出處、校準方法、假設值標示同限制。教育向模擬器，建議 15 歲以上，唔係算命或賭博。">
+<meta name="twitter:image" content="https://dancingturtle14.github.io/rebirth-sim/screenshots/01-start-yearpicker.png"><link rel="stylesheet" href="style.css?v=42"><script type="application/ld+json">{"@context":"https://schema.org","@type":"AboutPage","name":"隨機投胎 — 資料來源","url":"https://dancingturtle14.github.io/rebirth-sim/about.html","description":"說明隨機投胎點樣用歷史人口、死亡率同事件數據估算一世人生：資料集出處、校準方法、假設值標示同限制。教育向模擬器，建議 15 歲以上，唔係算命或賭博。","inLanguage":"zh-Hant"}</script></head><body><main><a class="langsw" href="?lang=en" lang="en">EN</a>
 <h1 style="font-size:26px">資料來源</h1>
 <div class="panel"><h2>點樣運作</h2><p>投胎時代按當時地區大約人口加權（人口^0.6，令細嘅時代都有機會抽到）。每年死亡率由「嬰兒死亡率＋幼兒死亡率＋成人背景死亡率＋隨年齡上升嘅 Gompertz 曲線」組成，再按階級同健康調整；歷史事件（戰爭、饑荒、瘟疫）喺對應年份額外增加風險。</p>
 <p style="margin-top:8px">v2：每個時代嘅成人死亡率會用 <code>tools/calibrate.js</code> 自動校準（模擬數千世，戰爭、饑荒、瘟疫、抉擇事件導致嘅死亡都計埋），令模擬平均壽命落喺下表參考範圍嘅中間。存活曲線、五歲前夭折機會、死因比例，全部係呢個模型嘅輸出，唔係史料原始數字。金額係遊戲換算，只供比較。每個抉擇彈窗都會引用一條時代數據同出處（<code>data/stats.js</code>）。</p><div id="tbl"></div><p style="margin-top:8px"><b>所有數字都係粗略估算，用作遊戲平衡</b>，唔係精確史實。前現代社會出生時預期壽命普遍約 20–35 歲，主要因為大量嬰幼兒夭折；捱過童年嘅人好多都活到 50–60 歲。</p></div>
